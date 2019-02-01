@@ -23,7 +23,7 @@ I will be doing a lot of experiments and improvements. The following are coming 
 
 ## Getting Started
 
-1) Install Java and Maven on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
+1) Install Java and Maven on your machine (optionally you could also install Scala too). The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
 
 - https://robotframework.org/#documentation
 
@@ -35,10 +35,14 @@ mvn clean
 mvn package
 ```
 
-3) Go into `target` then run the following to start the server.
+3) Go into `target` then run one of the following commands to start the server.
 
 ```
 java -jar scala-remote-library-server-1.0.jar
+
+#or...
+
+scala scala-remote-library-server-1.0.jar
 ```
 
 4) Go into `tests` then run the following.
