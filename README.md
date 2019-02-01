@@ -23,7 +23,9 @@ I will be doing a lot of experiments and improvements. The following are coming 
 
 ## Getting Started
 
-1) Install Java and Maven on your machine.
+1) Install Java and Maven on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
+
+https://robotframework.org/#documentation
 
 2) Clone this repo, go into `robotframework-scala-remote-library`, then create the server jar by running the following commands.
 
@@ -44,3 +46,12 @@ java -jar scala-remote-library-server-1.0.jar
 ```
 robot .
 ```
+
+***
+
+## Big thank you to the following people and groups.
+
+- Pekka Klarck
+- Thomas Jaspers
+- Li Haoyi
+- The entire Robot Framework community and its contributors
