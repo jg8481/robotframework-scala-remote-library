@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.1 on linux)" generated="20190201 01:05:16.661" rpa="false">
+<suite id="s1" name="Tests" source="/home/joshua/Documents/robotframework-scala-remote-library/tests">
+<suite id="s1-s1" name="ScalaKeywordsTest" source="/home/joshua/Documents/robotframework-scala-remote-library/tests/ScalaKeywordsTest.robot">
+<test id="s1-s1-t1" name="Run the Say Something keyword from the remote library and it should display &quot;Hello everyone&quot; in the log.html result file.">
+<kw name="Say Something Scala">
+<kw name="Say Something" library="Remote">
+<doc>Say Something</doc>
+<arguments>
+<arg>"Hello everyone"</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20190201 01:05:17.157" level="INFO">"Hello everyone"</msg>
+<msg timestamp="20190201 01:05:17.157" level="INFO">${val} = </msg>
+<status status="PASS" starttime="20190201 01:05:17.067" endtime="20190201 01:05:17.157"></status>
+</kw>
+<kw name="Should Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is empty.</doc>
+<arguments>
+<arg>${val}</arg>
+</arguments>
+<msg timestamp="20190201 01:05:17.157" level="INFO">Length is 0</msg>
+<status status="PASS" starttime="20190201 01:05:17.157" endtime="20190201 01:05:17.158"></status>
+</kw>
+<status status="PASS" starttime="20190201 01:05:17.067" endtime="20190201 01:05:17.158"></status>
+</kw>
+<status status="PASS" starttime="20190201 01:05:17.066" endtime="20190201 01:05:17.158" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Run the Check String keyword from the remote library, log it to the console, and it should be equal to String.">
+<kw name="Check String Scala">
+<kw name="Check String" library="Remote">
+<doc>Check String</doc>
+<arguments>
+<arg>8675309</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20190201 01:05:17.162" level="INFO">${val} = String</msg>
+<status status="PASS" starttime="20190201 01:05:17.159" endtime="20190201 01:05:17.162"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${val}</arg>
+</arguments>
+<msg timestamp="20190201 01:05:17.162" level="INFO">String</msg>
+<status status="PASS" starttime="20190201 01:05:17.162" endtime="20190201 01:05:17.162"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${val}</arg>
+</arguments>
+<status status="PASS" starttime="20190201 01:05:17.162" endtime="20190201 01:05:17.162"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${val}</arg>
+<arg>String</arg>
+</arguments>
+<status status="PASS" starttime="20190201 01:05:17.163" endtime="20190201 01:05:17.163"></status>
+</kw>
+<status status="PASS" starttime="20190201 01:05:17.159" endtime="20190201 01:05:17.163"></status>
+</kw>
+<status status="PASS" starttime="20190201 01:05:17.158" endtime="20190201 01:05:17.163" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Run the Just Text Scala keyword from the remote library, log it to the console, and it should be equal to &quot;Nothing special&quot;.">
+<kw name="Just Text Scala">
+<kw name="Just Text" library="Remote">
+<doc>Just Text</doc>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20190201 01:05:17.166" level="INFO">${val} = Nothing special</msg>
+<status status="PASS" starttime="20190201 01:05:17.164" endtime="20190201 01:05:17.166"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${val}</arg>
+</arguments>
+<msg timestamp="20190201 01:05:17.166" level="INFO">Nothing special</msg>
+<status status="PASS" starttime="20190201 01:05:17.166" endtime="20190201 01:05:17.167"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${val}</arg>
+</arguments>
+<status status="PASS" starttime="20190201 01:05:17.167" endtime="20190201 01:05:17.167"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${val}</arg>
+<arg>Nothing special</arg>
+</arguments>
+<status status="PASS" starttime="20190201 01:05:17.167" endtime="20190201 01:05:17.167"></status>
+</kw>
+<status status="PASS" starttime="20190201 01:05:17.163" endtime="20190201 01:05:17.167"></status>
+</kw>
+<status status="PASS" starttime="20190201 01:05:17.163" endtime="20190201 01:05:17.168" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190201 01:05:16.679" endtime="20190201 01:05:17.168"></status>
+</suite>
+<status status="PASS" starttime="20190201 01:05:16.662" endtime="20190201 01:05:17.169"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" id="s1-s1" name="ScalaKeywordsTest">Tests.ScalaKeywordsTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
