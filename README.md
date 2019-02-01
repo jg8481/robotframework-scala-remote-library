@@ -14,7 +14,7 @@ Why does this exist?
 
 I will be doing a lot of experiments and improvements. The following are coming soon...
 - Docker and docker-compose capability
-- ~~sbt capability~~ (Please use Maven. For more details to https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
+- ~~sbt capability~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
 - Experiments with Scala Native
 - Experiments with Ammonite
 - Experiments with ScalaCheck
