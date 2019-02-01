@@ -4,6 +4,23 @@ This is a working example of a Scala remote library based on a 2016 Robot Framew
 
 https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/
 
+Why does this exist?
+- I want to learn Scala. It does a lot of neat stuff.
+- I wanted to learn how the Robot Framework Remote Interface works.
+- I was inspired by the simplicity of the example Thomas Jaspers made.
+- Instead of hiding this Scala example on my local machine, I prefer to share it.
+
+## Coming Soon
+
+I will be doing a lot of experiments and improvements. The following are coming soon...
+- Docker and docker-compose capability
+- sbt capability
+- Experiments with Scala Native
+- Experiments with Ammonite
+- Experiments with ScalaCheck
+- Experiments with Gatling.io
+- Experiments with Javascript interop
+
 ## Getting Started
 
 1) Install Java and Maven on your machine.
