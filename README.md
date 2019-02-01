@@ -2,7 +2,7 @@
 
 This is a working example of a Scala remote library based on a 2016 Robot Framework tutorial published by Thomas Jaspers.
 
-https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/
+- https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/
 
 Why does this exist?
 - I want to learn Scala. It does a lot of neat stuff.
@@ -25,7 +25,7 @@ I will be doing a lot of experiments and improvements. The following are coming 
 
 1) Install Java and Maven on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
 
-https://robotframework.org/#documentation
+- https://robotframework.org/#documentation
 
 2) Clone this repo, go into `robotframework-scala-remote-library`, then create the server jar by running the following commands.
 
