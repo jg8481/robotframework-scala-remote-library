@@ -1,9 +1,7 @@
 package com.qamercenaryforhire.robotframework.scalaremotelibrary
 
 import org.robotframework.javalib.library.AnnotationLibrary
-
 import org.robotframework.remoteserver.RemoteServer
-
 import ScalaRemoteLibraryServer._
 
 
@@ -19,7 +17,7 @@ object ScalaRemoteLibraryServer {
 }
 
 class ScalaRemoteLibraryServer
-    extends AnnotationLibrary("com/qamercenaryforhire/robotframework/scalaremotelibrary/keywords/*.class") {
+    extends AnnotationLibrary("com/qamercenaryforhire/robotframework/scalaremotelibrary/keywords/*Keywords.class") {
 
   override def getKeywordDocumentation(keywordName: String): String = {
     if (keywordName.==("__intro__")) {

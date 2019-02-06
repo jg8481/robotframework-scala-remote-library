@@ -10,9 +10,9 @@ Why does this exist?
 - I was inspired by the simplicity of the example Thomas Jaspers made.
 - Instead of hiding this Scala example on my local machine, I prefer to share it.
 
-## Coming Soon
+## Working On The Following
 
-I will be doing a lot of experiments and improvements. The following are coming soon...
+I will be doing a lot of experiments and improvements.
 - Docker and docker-compose capability
 - ~~sbt capability~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
 - Experiments with Scala Native
@@ -21,7 +21,7 @@ I will be doing a lot of experiments and improvements. The following are coming 
 - Experiments with Gatling.io
 - Experiments with Javascript interop
 
-## Getting Started
+## Getting Started (only for Mac OSX or Linux users)
 
 1) Install Java and Maven on your machine (optionally you could also install Scala too). The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
 
