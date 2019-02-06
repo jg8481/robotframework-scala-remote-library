@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: org.scala-sbt
+Implementation-Title: test-interface
+Implementation-Version: 1.0
+Implementation-Vendor-Id: org.scala-sbt
+Specification-Vendor: org.scala-sbt
+Specification-Title: test-interface
+Specification-Version: 1.0
+
