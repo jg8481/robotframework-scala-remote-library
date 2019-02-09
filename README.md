@@ -13,17 +13,21 @@ Why does this exist?
 ## Working On The Following
 
 I will be doing a lot of experiments and improvements.
-- Docker and docker-compose capability
+- **Docker and docker-compose capability**
 - ~~sbt capability~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
-- Experiments with Scala Native
-- Experiments with Ammonite
-- Experiments with ScalaCheck
-- Experiments with Gatling.io
-- Experiments with Javascript interop
+- **Experiments with Scala Native**
+- **Experiments with Ammonite**
+  - Progress:
+    - (February 7, 2019) I finished creating a working Ammonite Library POC. Improvements and experiments will be ongoing. One of the interesting advantages of the Ammonite Library is that it does not require Maven to compile or run. Changes to the Ammonite Library can be done while the Scala keyword server is running. In general Ammonite has many capabilities. For example it has the scalaj-http library already built-in. Please check out the following for more information --> http://ammonite.io
+- **Experiments with ScalaCheck**
+  - Progress:
+    - (February 7, 2019) I finished creating a working ScalaCheck keyword driven by the Ammonite Library POC.
+- **Experiments with Gatling.io**
+- **Experiments with Javascript interop**
 
 ## Getting Started (only for Mac OSX or Linux users)
 
-1) Install Java and Maven on your machine (optionally you could also install Scala too). The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
+1) Install **cURL**** (must be installed in /usr/bin/curl), **Java 8**, **Maven**, and **Scala** on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
 
 - https://robotframework.org/#documentation
 
