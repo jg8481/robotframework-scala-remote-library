@@ -27,7 +27,7 @@ I will be doing a lot of experiments and improvements.
 
 ## Getting Started (only for Mac OSX or Linux users)
 
-1) Install **cURL**** (must be installed in /usr/bin/curl), **Java 8**, **Maven**, and **Scala** on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
+1) Install **cURL** (must be installed in /usr/bin/curl), **Java 8**, **Maven**, and **Scala** on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
 
 - https://robotframework.org/#documentation
 
