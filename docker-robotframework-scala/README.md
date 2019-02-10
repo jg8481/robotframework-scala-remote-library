@@ -5,6 +5,6 @@ This Docker container will build a simple Scala Native application that will tak
 ## Getting Started (Windows, Mac OSX, or Linux users)
 This container will work on any operating system that can run Docker. The only requirements to run this Docker container are...
 - Docker CE
- - https://docs.docker.com/v17.12/install/
+  - https://docs.docker.com/v17.12/install/
 - docker-compose
- - https://docs.docker.com/v17.12/compose/overview/
+  - https://docs.docker.com/v17.12/compose/overview/
