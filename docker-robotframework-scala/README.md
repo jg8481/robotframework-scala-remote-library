@@ -8,3 +8,10 @@ This container will work on any operating system that can run Docker. The only r
   - https://docs.docker.com/v17.12/install/
 - docker-compose
   - https://docs.docker.com/v17.12/compose/overview/
+
+The provided `start-robotframework-scala-docker-container.sh` script can be used to build and run the Docker container.
+```
+# Usage example:
+$ bash ./start-robotframework-scala-docker-container.sh Build-Docker-Container
+$ bash ./start-robotframework-scala-docker-container.sh Run-Docker-Container
+```
