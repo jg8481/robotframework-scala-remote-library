@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+
+  docker-robot-framework-scala-test-runner:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    volumes:
+      - "./application-under-test:/rfw"
+    environment:
+      - TEST_ENVIRONMENT=${TEST_ENVIRONMENT}
+    ports:
+      - "8270:8270"
+    command: -inMemory
+    network_mode: "bridge"

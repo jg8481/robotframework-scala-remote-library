@@ -1,6 +1,7 @@
 *** Settings ***
 
 Library    Remote     http://localhost:8270/
+
 Suite Setup    Ammonite Initialization
 
 *** Test Cases ***

@@ -54,3 +54,29 @@ def scalaCheckRunner(): Unit = {
   } yield base + middle.getOrElse("") + base.reverse
   print(palindromeRandomGen.sample)
 }
+
+
+@doc("usage: ./Ammonite --no-remote-logging ./AmmoniteLibrary.scala scalaNativeLettersTest")
+@main
+def scalaNativeLettersTest(): Unit = {
+  val lettersTest = %('bash, "-c",
+  "$SCALA_NATIVE_EXECUTABLE_PATH/simple-scala-native-example-application-out Hello",
+  SCALA_NATIVE_EXECUTABLE_PATH="/rfw/simple-scala-native-example-application/target/scala-2.11")
+}
+
+@doc("usage: ./Ammonite --no-remote-logging ./AmmoniteLibrary.scala scalaNativeNumbersTest")
+@main
+def scalaNativeNumbersTest(): Unit = {
+  val numbersTest = %('bash, "-c",
+  "$SCALA_NATIVE_EXECUTABLE_PATH/simple-scala-native-example-application-out 12345",
+  SCALA_NATIVE_EXECUTABLE_PATH="/rfw/simple-scala-native-example-application/target/scala-2.11")
+}
+
+@doc("usage: ./Ammonite --no-remote-logging ./AmmoniteLibrary.scala scalaNativeFuzzTest")
+@main
+def scalaNativeFuzzTest(): Unit = {
+  s"touch /rfw/tools/test-data-logs/fuzztestdata.txt".!
+  val executableFuzzTest = %('bash, "-c",
+  "SCALA_CHECK_DATA=$(/bin/cat /rfw/tools/test-data-logs/scalachecktestdata.txt) && echo $SCALA_CHECK_DATA >> /rfw/tools/test-data-logs/fuzztestdata.txt && FUZZ_TEST_DATA=$(/bin/cat /rfw/tools/test-data-logs/fuzztestdata.txt) && $SCALA_NATIVE_EXECUTABLE_PATH/simple-scala-native-example-application-out $FUZZ_TEST_DATA",
+  SCALA_NATIVE_EXECUTABLE_PATH="/rfw/simple-scala-native-example-application/target/scala-2.11")
+}

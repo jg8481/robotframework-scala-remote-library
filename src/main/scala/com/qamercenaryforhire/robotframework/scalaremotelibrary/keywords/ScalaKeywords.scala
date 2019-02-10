@@ -32,7 +32,7 @@ class ScalaKeywords {
 
   @RobotKeyword("Run Scala Check Data Generator")
   @ArgumentNames(Array("args"))
-  //This keyword deals with completely randomized QuickCheck-style side effects for fuzz testing. Which is why I am using a jar file in a for-loop here instead of using ScalaCheck directly... for now. This could change.
+  //This keyword deals with completely randomized QuickCheck-style side effects for fuzz testing.
   def runScalaCheckDataGenerator(args: Int): Unit = {
     if(args == 1){
       val path = "pwd".!!.trim
@@ -100,6 +100,68 @@ class ScalaKeywords {
   def runAmmoniteHttpFuzzTest(): String = {
     val path = "pwd".!!.trim
     s"$path/tools/ammonite-library/Ammonite --no-remote-logging $path/tools/ammonite-library/AmmoniteLibrary.scala patchFuzzTest"!!
+  }
+
+  @RobotKeyword("Run Scala Check Data Generator In Docker")
+  @ArgumentNames(Array("args"))
+  //This keyword deals with completely randomized QuickCheck-style side effects for fuzz testing.
+  def runScalaCheckDataGeneratorInDocker(args: Int): Unit = {
+    if(args == 1){
+      //Reset the scalachecktestdata.txt test data file.
+      s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      s"rm /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      //Then run the ScalaCheck test data generator.
+      s"sleep 1".!
+      var i = 0
+      for {
+        i <- 1 to 5
+        val mediumFuzzTest = Seq("/bin/bash", "-c",
+        "/rfw/tools/ammonite-library/Ammonite --no-remote-logging /rfw/tools/ammonite-library/AmmoniteLibrary.scala scalaCheckRunner >> /rfw/tools/test-data-logs/scalachecktestdata.txt").!!
+      }
+      s"sleep 1".!
+      val prepareTestData = Seq("/bin/bash", "-c",
+      "cp /rfw/tools/test-data-logs/scalachecktestdata.txt /rfw/tools/test-data-logs/temporarydata.txt && cat /rfw/tools/test-data-logs/temporarydata.txt | sed -e 's/Some//g' | sed -e 's/(//g' | sed -e 's/)//g' > /rfw/tools/test-data-logs/scalachecktestdata.txt").!!
+      s"rm /rfw/tools/test-data-logs/temporarydata.txt".!
+    }
+    if(args == 2){
+      //Reset the scalachecktestdata.txt test data file.
+      s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      s"rm /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      //Then run the ScalaCheck test data generator.
+      s"sleep 1".!
+      var i = 0
+      for {
+        i <- 1 to 20
+        val heavyFuzzTest = Seq("/bin/bash", "-c",
+        "/rfw/tools/ammonite-library/Ammonite --no-remote-logging /rfw/tools/ammonite-library/AmmoniteLibrary.scala scalaCheckRunner >> /rfw/tools/test-data-logs/scalachecktestdata.txt").!!
+      }
+      s"sleep 1".!
+      val prepareTestData = Seq("/bin/bash", "-c",
+      "cp /rfw/tools/test-data-logs/scalachecktestdata.txt /rfw/tools/test-data-logs/temporarydata.txt && cat /rfw/tools/test-data-logs/temporarydata.txt | sed -e 's/Some//g' | sed -e 's/(//g' | sed -e 's/)//g' > /rfw/tools/test-data-logs/scalachecktestdata.txt").!!
+      s"rm /rfw/tools/test-data-logs/temporarydata.txt".!
+    }
+  }
+
+  @RobotKeyword("Run Ammonite Scala Native Executable Enter Letters Test")
+  @ArgumentNames(Array())
+  def runAmmoniteScalaNativeExecutableEnterLettersTest(): Unit = {
+    val path = "pwd".!!.trim
+    s"/rfw/tools/ammonite-library/Ammonite --no-remote-logging /rfw/tools/ammonite-library/AmmoniteLibrary.scala scalaNativeLettersTest"!!
+  }
+
+  @RobotKeyword("Run Ammonite Scala Native Executable Enter Numbers Test")
+  @ArgumentNames(Array())
+  def runAmmoniteScalaNativeExecutableEnterNumbersTest(): Unit = {
+    val path = "pwd".!!.trim
+    s"/rfw/tools/ammonite-library/Ammonite --no-remote-logging /rfw/tools/ammonite-library/AmmoniteLibrary.scala scalaNativeNumbersTest"!!
+  }
+
+  @RobotKeyword("Run Ammonite Scala Native Executable Fuzz Test")
+  @ArgumentNames(Array())
+  def runAmmoniteScalaNativeExecutableFuzzTest(): Unit = {
+    s"/rfw/tools/ammonite-library/Ammonite --no-remote-logging /rfw/tools/ammonite-library/AmmoniteLibrary.scala scalaNativeFuzzTest"!!
   }
 
 }

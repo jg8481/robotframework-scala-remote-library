@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.1 on linux)" generated="20190208 19:48:46.465" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.1 on linux)" generated="20190210 02:35:03.708" rpa="false">
 <suite id="s1" name="Tests" source="/home/jg/Documents/robotframework-scala-remote-library/tests">
 <suite id="s1-s1" name="ScalaKeywordsTest" source="/home/jg/Documents/robotframework-scala-remote-library/tests/ScalaKeywordsTest.robot">
 <kw name="Ammonite Initialization" library="Remote" type="setup">
 <doc>Ammonite Initialization</doc>
-<status status="PASS" starttime="20190208 19:48:46.555" endtime="20190208 19:48:47.093"></status>
+<msg timestamp="20190210 02:35:09.284" level="INFO">Compiling (synthetic)/ammonite/predef/interpBridge.sc
+Compiling (synthetic)/ammonite/predef/DefaultPredef.sc
+Compiling /home/jg/Documents/robotframework-scala-remote-library/tools/ammonite-library/AmmoniteInitialize.scala
+Compiling /home/jg/Documents/robotframework-scala-remote-library/tools/ammonite-library/AmmoniteInitialize.scala #2</msg>
+<status status="PASS" starttime="20190210 02:35:04.815" endtime="20190210 02:35:09.284"></status>
 </kw>
 <test id="s1-s1-t1" name="SERVER CHECK : Run the Say Something keyword from a remote library and it should display in the log.html result file.">
 <kw name="Say Something Scala">
@@ -16,31 +20,32 @@
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20190208 19:48:47.095" level="INFO">${val} = </msg>
-<status status="PASS" starttime="20190208 19:48:47.094" endtime="20190208 19:48:47.095"></status>
+<msg timestamp="20190210 02:35:09.289" level="INFO">"Hello everyone"</msg>
+<msg timestamp="20190210 02:35:09.289" level="INFO">${val} = </msg>
+<status status="PASS" starttime="20190210 02:35:09.285" endtime="20190210 02:35:09.289"></status>
 </kw>
 <kw name="Should Be Empty" library="BuiltIn">
 <doc>Verifies that the given item is empty.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:47.096" level="INFO">Length is 0</msg>
-<status status="PASS" starttime="20190208 19:48:47.095" endtime="20190208 19:48:47.096"></status>
+<msg timestamp="20190210 02:35:09.289" level="INFO">Length is 0</msg>
+<status status="PASS" starttime="20190210 02:35:09.289" endtime="20190210 02:35:09.290"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:47.096" level="INFO"></msg>
-<status status="PASS" starttime="20190208 19:48:47.096" endtime="20190208 19:48:47.096"></status>
+<msg timestamp="20190210 02:35:09.290" level="INFO"></msg>
+<status status="PASS" starttime="20190210 02:35:09.290" endtime="20190210 02:35:09.290"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:47.093" endtime="20190208 19:48:47.096"></status>
+<status status="PASS" starttime="20190210 02:35:09.284" endtime="20190210 02:35:09.290"></status>
 </kw>
 <tags>
 <tag>This_Is_Not_An_Actual_Test</tag>
 </tags>
-<status status="PASS" starttime="20190208 19:48:47.093" endtime="20190208 19:48:47.096" critical="yes"></status>
+<status status="PASS" starttime="20190210 02:35:09.284" endtime="20190210 02:35:09.290" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="SERVER CHECK : Run the Check String keyword from a remote library and it should be equal to String.">
 <kw name="Check String Scala">
@@ -52,8 +57,8 @@
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20190208 19:48:47.098" level="INFO">${val} = String</msg>
-<status status="PASS" starttime="20190208 19:48:47.097" endtime="20190208 19:48:47.098"></status>
+<msg timestamp="20190210 02:35:09.293" level="INFO">${val} = String</msg>
+<status status="PASS" starttime="20190210 02:35:09.291" endtime="20190210 02:35:09.293"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -61,29 +66,29 @@
 <arg>${val}</arg>
 <arg>String</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:47.098" endtime="20190208 19:48:47.099"></status>
+<status status="PASS" starttime="20190210 02:35:09.293" endtime="20190210 02:35:09.293"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:47.099" endtime="20190208 19:48:47.099"></status>
+<status status="PASS" starttime="20190210 02:35:09.294" endtime="20190210 02:35:09.294"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:47.099" level="INFO">String</msg>
-<status status="PASS" starttime="20190208 19:48:47.099" endtime="20190208 19:48:47.099"></status>
+<msg timestamp="20190210 02:35:09.294" level="INFO">String</msg>
+<status status="PASS" starttime="20190210 02:35:09.294" endtime="20190210 02:35:09.294"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:47.097" endtime="20190208 19:48:47.099"></status>
+<status status="PASS" starttime="20190210 02:35:09.291" endtime="20190210 02:35:09.294"></status>
 </kw>
 <tags>
 <tag>This_Is_Not_An_Actual_Test</tag>
 </tags>
-<status status="PASS" starttime="20190208 19:48:47.096" endtime="20190208 19:48:47.099" critical="yes"></status>
+<status status="PASS" starttime="20190210 02:35:09.290" endtime="20190210 02:35:09.295" critical="yes"></status>
 </test>
 <test id="s1-s1-t3" name="SERVER CHECK : Run the Just Text Scala keyword from a remote library and it should display in the log.html result file.">
 <kw name="Just Text Scala">
@@ -92,8 +97,8 @@
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20190208 19:48:47.102" level="INFO">${val} = Nothing special</msg>
-<status status="PASS" starttime="20190208 19:48:47.100" endtime="20190208 19:48:47.102"></status>
+<msg timestamp="20190210 02:35:09.298" level="INFO">${val} = Nothing special</msg>
+<status status="PASS" starttime="20190210 02:35:09.296" endtime="20190210 02:35:09.298"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -101,29 +106,29 @@
 <arg>${val}</arg>
 <arg>Nothing special</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:47.102" endtime="20190208 19:48:47.102"></status>
+<status status="PASS" starttime="20190210 02:35:09.298" endtime="20190210 02:35:09.299"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:47.102" endtime="20190208 19:48:47.102"></status>
+<status status="PASS" starttime="20190210 02:35:09.299" endtime="20190210 02:35:09.299"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:47.103" level="INFO">Nothing special</msg>
-<status status="PASS" starttime="20190208 19:48:47.103" endtime="20190208 19:48:47.103"></status>
+<msg timestamp="20190210 02:35:09.300" level="INFO">Nothing special</msg>
+<status status="PASS" starttime="20190210 02:35:09.299" endtime="20190210 02:35:09.300"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:47.100" endtime="20190208 19:48:47.103"></status>
+<status status="PASS" starttime="20190210 02:35:09.296" endtime="20190210 02:35:09.300"></status>
 </kw>
 <tags>
 <tag>This_Is_Not_An_Actual_Test</tag>
 </tags>
-<status status="PASS" starttime="20190208 19:48:47.100" endtime="20190208 19:48:47.103" critical="yes"></status>
+<status status="PASS" starttime="20190210 02:35:09.295" endtime="20190210 02:35:09.301" critical="yes"></status>
 </test>
 <test id="s1-s1-t4" name="TEST 1 : Run the Ammonite keywords that will send an HTTP Post request.">
 <kw name="Run Ammonite Post Request Script">
@@ -132,10 +137,11 @@
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:48:47.913" level="INFO">${ammonite} = {"title":"qa","body":"test","userId":"1","id":101}
+<msg timestamp="20190210 02:35:14.938" level="INFO">Compiling /home/jg/Documents/robotframework-scala-remote-library/tools/ammonite-library/AmmoniteLibrary.scala</msg>
+<msg timestamp="20190210 02:35:14.938" level="INFO">${ammonite} = {"title":"qa","body":"test","userId":"1","id":101}
 Post Request Script completed.
 </msg>
-<status status="PASS" starttime="20190208 19:48:47.104" endtime="20190208 19:48:47.913"></status>
+<status status="PASS" starttime="20190210 02:35:09.302" endtime="20190210 02:35:14.938"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -143,31 +149,31 @@ Post Request Script completed.
 <arg>${ammonite}</arg>
 <arg>"title":"qa"</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:47.913" endtime="20190208 19:48:47.913"></status>
+<status status="PASS" starttime="20190210 02:35:14.939" endtime="20190210 02:35:14.939"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:47.913" endtime="20190208 19:48:47.914"></status>
+<status status="PASS" starttime="20190210 02:35:14.940" endtime="20190210 02:35:14.940"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:47.914" level="INFO">{"title":"qa","body":"test","userId":"1","id":101}
+<msg timestamp="20190210 02:35:14.941" level="INFO">{"title":"qa","body":"test","userId":"1","id":101}
 Post Request Script completed.
 </msg>
-<status status="PASS" starttime="20190208 19:48:47.914" endtime="20190208 19:48:47.914"></status>
+<status status="PASS" starttime="20190210 02:35:14.940" endtime="20190210 02:35:14.941"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:47.104" endtime="20190208 19:48:47.914"></status>
+<status status="PASS" starttime="20190210 02:35:09.301" endtime="20190210 02:35:14.941"></status>
 </kw>
 <tags>
 <tag>This_Is_An_Actual_Test</tag>
 </tags>
-<status status="PASS" starttime="20190208 19:48:47.103" endtime="20190208 19:48:47.914" critical="yes"></status>
+<status status="PASS" starttime="20190210 02:35:09.301" endtime="20190210 02:35:14.941" critical="yes"></status>
 </test>
 <test id="s1-s1-t5" name="TEST 2 : Run the Ammonite keywords that will send an HTTP Get request.">
 <kw name="Run Ammonite Get Request Script">
@@ -176,13 +182,13 @@ Post Request Script completed.
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:48:48.697" level="INFO">${ammonite} = [
+<msg timestamp="20190210 02:35:15.680" level="INFO">${ammonite} = [
   {
     "userId": 1,
     "id": 1,
     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita ...</msg>
-<status status="PASS" starttime="20190208 19:48:47.915" endtime="20190208 19:48:48.697"></status>
+<status status="PASS" starttime="20190210 02:35:14.943" endtime="20190210 02:35:15.680"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -190,14 +196,14 @@ Post Request Script completed.
 <arg>${ammonite}</arg>
 <arg>"body":</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:48.697" endtime="20190208 19:48:48.697"></status>
+<status status="PASS" starttime="20190210 02:35:15.680" endtime="20190210 02:35:15.681"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:48.697" level="INFO">[
+<msg timestamp="20190210 02:35:15.682" level="INFO">[
   {
     "userId": 1,
     "id": 1,
@@ -801,14 +807,14 @@ Post Request Script completed.
 ]
 Get Request Script completed.
 </msg>
-<status status="PASS" starttime="20190208 19:48:48.697" endtime="20190208 19:48:48.698"></status>
+<status status="PASS" starttime="20190210 02:35:15.681" endtime="20190210 02:35:15.683"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:47.914" endtime="20190208 19:48:48.698"></status>
+<status status="PASS" starttime="20190210 02:35:14.943" endtime="20190210 02:35:15.683"></status>
 </kw>
 <tags>
 <tag>This_Is_An_Actual_Test</tag>
 </tags>
-<status status="PASS" starttime="20190208 19:48:47.914" endtime="20190208 19:48:48.698" critical="yes"></status>
+<status status="PASS" starttime="20190210 02:35:14.942" endtime="20190210 02:35:15.684" critical="yes"></status>
 </test>
 <test id="s1-s1-t6" name="TEST 3 : Run the Ammonite keywords that will perform an HTTP fuzz test.">
 <kw name="Run Scala Check">
@@ -820,9 +826,9 @@ Setting it to 2 will generate a heavy amount of fuzz test data.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:48.699" endtime="20190208 19:48:57.604"></status>
+<status status="PASS" starttime="20190210 02:35:15.687" endtime="20190210 02:35:24.676"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:48.698" endtime="20190208 19:48:57.604"></status>
+<status status="PASS" starttime="20190210 02:35:15.687" endtime="20190210 02:35:24.676"></status>
 </kw>
 <kw name="Run Ammonite Fuzz Test Script">
 <doc>If you want to be really mean and try to crash your own application-under-test (do not try to crash the jsonplaceholder.typicode.com website!!!), then
@@ -834,28 +840,27 @@ WARNING : IF YOU RUN THIS KEYWORD WITH A LONG DURATION IT'S AT YOUR OWN RISK.</d
 <arg>5 times</arg>
 <arg>Ammonite Fuzz Test</arg>
 </arguments>
-<msg timestamp="20190208 19:48:57.605" level="INFO">Repeating keyword, round 1/5.</msg>
+<msg timestamp="20190210 02:35:24.677" level="INFO">Repeating keyword, round 1/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:48:58.520" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20190210 02:35:25.532" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  1716    0   574  100  1142   1828   3636 --:--:-- --:--:-- --:--:--  5447
-100  1716    0   574  100  1142   1828   3636 --:--:-- --:--:-- --:--:--  5447</msg>
-<msg timestamp="20190208 19:48:58.521" level="INFO">${ammonite} = HTTP/1.1 100 Continue
+100  2503    0   574  100  1929   2884   9693 --:--:-- --:--:-- --:--:-- 12577</msg>
+<msg timestamp="20190210 02:35:25.533" level="INFO">${ammonite} = HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:48:58 GMT
+Date: Sun, 10 Feb 2019 07:35:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Set-Cookie: __cfd...</msg>
-<status status="PASS" starttime="20190208 19:48:57.606" endtime="20190208 19:48:58.521"></status>
+<status status="PASS" starttime="20190210 02:35:24.677" endtime="20190210 02:35:25.533"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -863,21 +868,21 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:58.521" endtime="20190208 19:48:58.521"></status>
+<status status="PASS" starttime="20190210 02:35:25.533" endtime="20190210 02:35:25.533"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:58.522" level="INFO">HTTP/1.1 100 Continue
+<msg timestamp="20190210 02:35:25.533" level="INFO">HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:48:58 GMT
+Date: Sun, 10 Feb 2019 07:35:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=df2e1c6a37ded2c6f957abdf717a7fd881549673338; expires=Sun, 09-Feb-20 00:48:58 GMT; path=/; domain=.typicode.com; HttpOnly
+Set-Cookie: __cfduid=d3efe7ea290d4dd6fab773b6be5ab9cf11549784125; expires=Mon, 10-Feb-20 07:35:25 GMT; path=/; domain=.typicode.com; HttpOnly
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -886,9 +891,9 @@ Pragma: no-cache
 Expires: -1
 Via: 1.1 vegur
 Server: cloudflare
-CF-RAY: 4a62555c2f84c5c2-EWR
+CF-RAY: 4a6ce61f5bfdc54e-ORD
 
-SyntaxError: Unexpected token ꉪ in JSON at position 10
+SyntaxError: Unexpected token 쟶 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -899,31 +904,31 @@ SyntaxError: Unexpected token ꉪ in JSON at position 10
     at endReadableNT (_stream_readable.js:1103:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" starttime="20190208 19:48:58.522" endtime="20190208 19:48:58.522"></status>
+<status status="PASS" starttime="20190210 02:35:25.533" endtime="20190210 02:35:25.533"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:57.606" endtime="20190208 19:48:58.523"></status>
+<status status="PASS" starttime="20190210 02:35:24.677" endtime="20190210 02:35:25.533"></status>
 </kw>
-<msg timestamp="20190208 19:48:58.523" level="INFO">Repeating keyword, round 2/5.</msg>
+<msg timestamp="20190210 02:35:25.533" level="INFO">Repeating keyword, round 2/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:48:59.332" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20190210 02:35:26.299" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  1716    0   574  100  1142   2870   5710 --:--:-- --:--:-- --:--:--  8580</msg>
-<msg timestamp="20190208 19:48:59.333" level="INFO">${ammonite} = HTTP/1.1 100 Continue
+100  2503    0   574  100  1929   5797  19484 --:--:-- --:--:-- --:--:-- 25282</msg>
+<msg timestamp="20190210 02:35:26.299" level="INFO">${ammonite} = HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:48:59 GMT
+Date: Sun, 10 Feb 2019 07:35:26 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Set-Cookie: __cfd...</msg>
-<status status="PASS" starttime="20190208 19:48:58.524" endtime="20190208 19:48:59.333"></status>
+<status status="PASS" starttime="20190210 02:35:25.534" endtime="20190210 02:35:26.299"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -931,21 +936,21 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:48:59.334" endtime="20190208 19:48:59.335"></status>
+<status status="PASS" starttime="20190210 02:35:26.300" endtime="20190210 02:35:26.300"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:48:59.336" level="INFO">HTTP/1.1 100 Continue
+<msg timestamp="20190210 02:35:26.300" level="INFO">HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:48:59 GMT
+Date: Sun, 10 Feb 2019 07:35:26 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d7d7a7312e9d211474f6925d853560f551549673339; expires=Sun, 09-Feb-20 00:48:59 GMT; path=/; domain=.typicode.com; HttpOnly
+Set-Cookie: __cfduid=ded9c91dc50b3e4e7ac34d110341c574c1549784126; expires=Mon, 10-Feb-20 07:35:26 GMT; path=/; domain=.typicode.com; HttpOnly
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -954,9 +959,9 @@ Pragma: no-cache
 Expires: -1
 Via: 1.1 vegur
 Server: cloudflare
-CF-RAY: 4a6255620e4cc5fa-EWR
+CF-RAY: 4a6ce6247b48c1d6-IAD
 
-SyntaxError: Unexpected token ꉪ in JSON at position 10
+SyntaxError: Unexpected token 쟶 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -967,31 +972,31 @@ SyntaxError: Unexpected token ꉪ in JSON at position 10
     at endReadableNT (_stream_readable.js:1103:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" starttime="20190208 19:48:59.335" endtime="20190208 19:48:59.336"></status>
+<status status="PASS" starttime="20190210 02:35:26.300" endtime="20190210 02:35:26.300"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:58.523" endtime="20190208 19:48:59.337"></status>
+<status status="PASS" starttime="20190210 02:35:25.533" endtime="20190210 02:35:26.300"></status>
 </kw>
-<msg timestamp="20190208 19:48:59.337" level="INFO">Repeating keyword, round 3/5.</msg>
+<msg timestamp="20190210 02:35:26.300" level="INFO">Repeating keyword, round 3/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:49:00.206" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20190210 02:35:27.083" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  1716    0   574  100  1142   2474   4922 --:--:-- --:--:-- --:--:--  7396</msg>
-<msg timestamp="20190208 19:49:00.206" level="INFO">${ammonite} = HTTP/1.1 100 Continue
+100  2503    0   574  100  1929   4783  16075 --:--:-- --:--:-- --:--:-- 20858</msg>
+<msg timestamp="20190210 02:35:27.083" level="INFO">${ammonite} = HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:49:00 GMT
+Date: Sun, 10 Feb 2019 07:35:26 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Set-Cookie: __cfd...</msg>
-<status status="PASS" starttime="20190208 19:48:59.339" endtime="20190208 19:49:00.207"></status>
+<status status="PASS" starttime="20190210 02:35:26.301" endtime="20190210 02:35:27.083"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -999,21 +1004,21 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:49:00.207" endtime="20190208 19:49:00.208"></status>
+<status status="PASS" starttime="20190210 02:35:27.083" endtime="20190210 02:35:27.083"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:49:00.208" level="INFO">HTTP/1.1 100 Continue
+<msg timestamp="20190210 02:35:27.084" level="INFO">HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:49:00 GMT
+Date: Sun, 10 Feb 2019 07:35:26 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d0b3351d96a8d3b57eabbe26d4db0af0e1549673340; expires=Sun, 09-Feb-20 00:49:00 GMT; path=/; domain=.typicode.com; HttpOnly
+Set-Cookie: __cfduid=d876608c2bcc61995f152f471578f42b61549784126; expires=Mon, 10-Feb-20 07:35:26 GMT; path=/; domain=.typicode.com; HttpOnly
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -1022,9 +1027,9 @@ Pragma: no-cache
 Expires: -1
 Via: 1.1 vegur
 Server: cloudflare
-CF-RAY: 4a6255676e67c5ea-EWR
+CF-RAY: 4a6ce6294456c1bd-IAD
 
-SyntaxError: Unexpected token ꉪ in JSON at position 10
+SyntaxError: Unexpected token 쟶 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -1035,31 +1040,31 @@ SyntaxError: Unexpected token ꉪ in JSON at position 10
     at endReadableNT (_stream_readable.js:1103:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" starttime="20190208 19:49:00.208" endtime="20190208 19:49:00.209"></status>
+<status status="PASS" starttime="20190210 02:35:27.084" endtime="20190210 02:35:27.084"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:59.337" endtime="20190208 19:49:00.209"></status>
+<status status="PASS" starttime="20190210 02:35:26.300" endtime="20190210 02:35:27.084"></status>
 </kw>
-<msg timestamp="20190208 19:49:00.209" level="INFO">Repeating keyword, round 4/5.</msg>
+<msg timestamp="20190210 02:35:27.084" level="INFO">Repeating keyword, round 4/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:49:01.308" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20190210 02:35:27.859" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  1716    0   574  100  1142   1350   2687 --:--:-- --:--:-- --:--:--  4037</msg>
-<msg timestamp="20190208 19:49:01.309" level="INFO">${ammonite} = HTTP/1.1 100 Continue
+100  2503    0   574  100  1929   4823  16210 --:--:-- --:--:-- --:--:-- 21033</msg>
+<msg timestamp="20190210 02:35:27.859" level="INFO">${ammonite} = HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:49:01 GMT
+Date: Sun, 10 Feb 2019 07:35:27 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Set-Cookie: __cfd...</msg>
-<status status="PASS" starttime="20190208 19:49:00.210" endtime="20190208 19:49:01.309"></status>
+<status status="PASS" starttime="20190210 02:35:27.084" endtime="20190210 02:35:27.859"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1067,21 +1072,21 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:49:01.310" endtime="20190208 19:49:01.311"></status>
+<status status="PASS" starttime="20190210 02:35:27.860" endtime="20190210 02:35:27.860"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:49:01.312" level="INFO">HTTP/1.1 100 Continue
+<msg timestamp="20190210 02:35:27.860" level="INFO">HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:49:01 GMT
+Date: Sun, 10 Feb 2019 07:35:27 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=deec4ca2e71ed330bb6c09b8d0c8ac7c11549673340; expires=Sun, 09-Feb-20 00:49:00 GMT; path=/; domain=.typicode.com; HttpOnly
+Set-Cookie: __cfduid=d23a8d2db286ea0d9564d712a4d00634a1549784127; expires=Mon, 10-Feb-20 07:35:27 GMT; path=/; domain=.typicode.com; HttpOnly
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -1090,9 +1095,9 @@ Pragma: no-cache
 Expires: -1
 Via: 1.1 vegur
 Server: cloudflare
-CF-RAY: 4a62556d08ffc5c6-EWR
+CF-RAY: 4a6ce62e2886c17c-IAD
 
-SyntaxError: Unexpected token ꉪ in JSON at position 10
+SyntaxError: Unexpected token 쟶 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -1103,31 +1108,31 @@ SyntaxError: Unexpected token ꉪ in JSON at position 10
     at endReadableNT (_stream_readable.js:1103:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" starttime="20190208 19:49:01.311" endtime="20190208 19:49:01.313"></status>
+<status status="PASS" starttime="20190210 02:35:27.860" endtime="20190210 02:35:27.860"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:49:00.209" endtime="20190208 19:49:01.313"></status>
+<status status="PASS" starttime="20190210 02:35:27.084" endtime="20190210 02:35:27.860"></status>
 </kw>
-<msg timestamp="20190208 19:49:01.313" level="INFO">Repeating keyword, round 5/5.</msg>
+<msg timestamp="20190210 02:35:27.860" level="INFO">Repeating keyword, round 5/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20190208 19:49:02.238" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20190210 02:35:28.638" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  1716    0   574  100  1142   2014   4007 --:--:-- --:--:-- --:--:--  6021</msg>
-<msg timestamp="20190208 19:49:02.238" level="INFO">${ammonite} = HTTP/1.1 100 Continue
+100  2503    0   574  100  1929   4592  15432 --:--:-- --:--:-- --:--:-- 20024</msg>
+<msg timestamp="20190210 02:35:28.638" level="INFO">${ammonite} = HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:49:02 GMT
+Date: Sun, 10 Feb 2019 07:35:28 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Set-Cookie: __cfd...</msg>
-<status status="PASS" starttime="20190208 19:49:01.314" endtime="20190208 19:49:02.238"></status>
+<status status="PASS" starttime="20190210 02:35:27.861" endtime="20190210 02:35:28.638"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1135,21 +1140,21 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" starttime="20190208 19:49:02.239" endtime="20190208 19:49:02.239"></status>
+<status status="PASS" starttime="20190210 02:35:28.639" endtime="20190210 02:35:28.639"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20190208 19:49:02.240" level="INFO">HTTP/1.1 100 Continue
+<msg timestamp="20190210 02:35:28.639" level="INFO">HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
-Date: Sat, 09 Feb 2019 00:49:02 GMT
+Date: Sun, 10 Feb 2019 07:35:28 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=dcf9b3221563022a6a4912f1c41ced7831549673342; expires=Sun, 09-Feb-20 00:49:02 GMT; path=/; domain=.typicode.com; HttpOnly
+Set-Cookie: __cfduid=dfe5b98530bdaa725f560b800062ec5f41549784128; expires=Mon, 10-Feb-20 07:35:28 GMT; path=/; domain=.typicode.com; HttpOnly
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -1158,9 +1163,9 @@ Pragma: no-cache
 Expires: -1
 Via: 1.1 vegur
 Server: cloudflare
-CF-RAY: 4a625573a802c5ca-EWR
+CF-RAY: 4a6ce632ef48c1d6-IAD
 
-SyntaxError: Unexpected token ꉪ in JSON at position 10
+SyntaxError: Unexpected token 쟶 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -1171,22 +1176,22 @@ SyntaxError: Unexpected token ꉪ in JSON at position 10
     at endReadableNT (_stream_readable.js:1103:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" starttime="20190208 19:49:02.239" endtime="20190208 19:49:02.240"></status>
+<status status="PASS" starttime="20190210 02:35:28.639" endtime="20190210 02:35:28.639"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:49:01.314" endtime="20190208 19:49:02.240"></status>
+<status status="PASS" starttime="20190210 02:35:27.860" endtime="20190210 02:35:28.639"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:57.605" endtime="20190208 19:49:02.240"></status>
+<status status="PASS" starttime="20190210 02:35:24.677" endtime="20190210 02:35:28.639"></status>
 </kw>
-<status status="PASS" starttime="20190208 19:48:57.605" endtime="20190208 19:49:02.241"></status>
+<status status="PASS" starttime="20190210 02:35:24.676" endtime="20190210 02:35:28.639"></status>
 </kw>
 <tags>
 <tag>This_Is_An_Actual_Test</tag>
 </tags>
-<status status="PASS" starttime="20190208 19:48:48.698" endtime="20190208 19:49:02.241" critical="yes"></status>
+<status status="PASS" starttime="20190210 02:35:15.685" endtime="20190210 02:35:28.640" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20190208 19:48:46.483" endtime="20190208 19:49:02.242"></status>
+<status status="PASS" starttime="20190210 02:35:03.725" endtime="20190210 02:35:28.640"></status>
 </suite>
-<status status="PASS" starttime="20190208 19:48:46.466" endtime="20190208 19:49:02.246"></status>
+<status status="PASS" starttime="20190210 02:35:03.708" endtime="20190210 02:35:28.642"></status>
 </suite>
 <statistics>
 <total>
