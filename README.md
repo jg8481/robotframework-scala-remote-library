@@ -16,7 +16,7 @@ I will be doing a lot of experiments and improvements.
 - **Docker and docker-compose capability (Windows users, please try this Docker container)**
   - Progress:
     - (February 10, 2019) Created a Docker container and docker-compose file that will build a simple Scala Native application and run the Robot Framework Scala Remote Library to test the native executable.
-- ~~sbt capability~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
+- ~~**sbt capability**~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
 - **Experiments with Scala Native**
   - Progress:
     - (February 10, 2019) Created a working example of a Scala Native application that will take text from the command line and pipe it into a text file.
