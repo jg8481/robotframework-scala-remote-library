@@ -20,7 +20,7 @@ I will be doing a lot of experiments and improvements.
 - **Experiments with Scala Native**
   - Progress:
     - (February 10, 2019) Created a working example of a Scala Native application that will take text from the command line and pipe it into a text file.
-    - (February 12, 2019) Created a working Scala Native custom C library that combines Scala and C to test memory utilization after gradually increasing allocation, memory utilization, and cpu utilization. More improvements will be coming soon.
+    - (February 12, 2019) Created a working Scala Native custom C library that combines Scala and C to test gradually increasing memory allocation, memory utilization, and cpu utilization. More improvements will be coming soon.
 - **Experiments with Ammonite**
   - Progress:
     - (February 7, 2019) Created a working Ammonite Library POC. Improvements and experiments will be ongoing. One of the interesting advantages of the Ammonite Library is that it does not require Maven to compile or run. Changes to the Ammonite Library can be done while the Scala keyword server is running. In general Ammonite has many capabilities. For example it has the scalaj-http library already built-in. Please check out the following for more information --> http://ammonite.io
