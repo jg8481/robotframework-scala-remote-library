@@ -37,8 +37,7 @@ class ScalaKeywords {
     if(args == 1){
       val path = "pwd".!!.trim
       //Reset the scalachecktestdata.txt test data file.
-      s"touch $path/tools/test-data-logs/scalachecktestdata.txt".!
-      s"rm $path/tools/test-data-logs/scalachecktestdata.txt".!
+      s"rm -rf $path/tools/test-data-logs/scalachecktestdata.txt".!
       s"touch $path/tools/test-data-logs/scalachecktestdata.txt".!
       //Then run the ScalaCheck test data generator.
       s"sleep 1".!
@@ -51,13 +50,12 @@ class ScalaKeywords {
       s"sleep 1".!
       val prepareTestData = Seq("/bin/bash", "-c",
       "path=$(pwd) && cp $path/tools/test-data-logs/scalachecktestdata.txt $path/tools/test-data-logs/temporarydata.txt && cat $path/tools/test-data-logs/temporarydata.txt | sed -e 's/Some//g' | sed -e 's/(//g' | sed -e 's/)//g' > $path/tools/test-data-logs/scalachecktestdata.txt").!!
-      s"rm $path/tools/test-data-logs/temporarydata.txt".!
+      s"rm -rf $path/tools/test-data-logs/temporarydata.txt".!
     }
     if(args == 2){
       val path = "pwd".!!.trim
       //Reset the scalachecktestdata.txt test data file.
-      s"touch $path/tools/test-data-logs/scalachecktestdata.txt".!
-      s"rm $path/tools/test-data-logs/scalachecktestdata.txt".!
+      s"rm -rf $path/tools/test-data-logs/scalachecktestdata.txt".!
       s"touch $path/tools/test-data-logs/scalachecktestdata.txt".!
       //Then run the ScalaCheck test data generator.
       s"sleep 1".!
@@ -70,7 +68,7 @@ class ScalaKeywords {
       s"sleep 1".!
       val prepareTestData = Seq("/bin/bash", "-c",
       "path=$(pwd) && cp $path/tools/test-data-logs/scalachecktestdata.txt $path/tools/test-data-logs/temporarydata.txt && cat $path/tools/test-data-logs/temporarydata.txt | sed -e 's/Some//g' | sed -e 's/(//g' | sed -e 's/)//g' > $path/tools/test-data-logs/scalachecktestdata.txt").!!
-      s"rm $path/tools/test-data-logs/temporarydata.txt".!
+      s"rm -rf $path/tools/test-data-logs/temporarydata.txt".!
     }
   }
 
@@ -108,8 +106,7 @@ class ScalaKeywords {
   def runScalaCheckDataGeneratorInDocker(args: Int): Unit = {
     if(args == 1){
       //Reset the scalachecktestdata.txt test data file.
-      s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
-      s"rm /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      s"rm -rf /rfw/tools/test-data-logs/scalachecktestdata.txt".!
       s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
       //Then run the ScalaCheck test data generator.
       s"sleep 1".!
@@ -122,12 +119,11 @@ class ScalaKeywords {
       s"sleep 1".!
       val prepareTestData = Seq("/bin/bash", "-c",
       "cp /rfw/tools/test-data-logs/scalachecktestdata.txt /rfw/tools/test-data-logs/temporarydata.txt && cat /rfw/tools/test-data-logs/temporarydata.txt | sed -e 's/Some//g' | sed -e 's/(//g' | sed -e 's/)//g' > /rfw/tools/test-data-logs/scalachecktestdata.txt").!!
-      s"rm /rfw/tools/test-data-logs/temporarydata.txt".!
+      s"rm -rf /rfw/tools/test-data-logs/temporarydata.txt".!
     }
     if(args == 2){
       //Reset the scalachecktestdata.txt test data file.
-      s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
-      s"rm /rfw/tools/test-data-logs/scalachecktestdata.txt".!
+      s"rm -rf /rfw/tools/test-data-logs/scalachecktestdata.txt".!
       s"touch /rfw/tools/test-data-logs/scalachecktestdata.txt".!
       //Then run the ScalaCheck test data generator.
       s"sleep 1".!
@@ -140,7 +136,7 @@ class ScalaKeywords {
       s"sleep 1".!
       val prepareTestData = Seq("/bin/bash", "-c",
       "cp /rfw/tools/test-data-logs/scalachecktestdata.txt /rfw/tools/test-data-logs/temporarydata.txt && cat /rfw/tools/test-data-logs/temporarydata.txt | sed -e 's/Some//g' | sed -e 's/(//g' | sed -e 's/)//g' > /rfw/tools/test-data-logs/scalachecktestdata.txt").!!
-      s"rm /rfw/tools/test-data-logs/temporarydata.txt".!
+      s"rm -rf /rfw/tools/test-data-logs/temporarydata.txt".!
     }
   }
 
@@ -167,8 +163,8 @@ class ScalaKeywords {
   @RobotKeyword("Run Scala Native C Library CPU Utilization Check")
   @ArgumentNames(Array())
   def runScalaNativeCLibraryCPUUtilizationCheck(): Unit = {
+    s"rm -rf /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
-    s"rm /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     val cpuUtilization = Seq("/bin/bash", "-c",
     "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out cpucheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
   }
@@ -176,8 +172,8 @@ class ScalaKeywords {
   @RobotKeyword("Run Scala Native C Library Memory Utilization Check")
   @ArgumentNames(Array())
   def runScalaNativeCLibraryMemoryUtilizationCheck(): Unit = {
+    s"rm -rf /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
-    s"rm /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     val memoryUtilization = Seq("/bin/bash", "-c",
     "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out memorycheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
   }
@@ -185,8 +181,8 @@ class ScalaKeywords {
   @RobotKeyword("Run Scala Native C Library Increased Memory Allocation Check")
   @ArgumentNames(Array())
   def runScalaNativeCLibraryIncreasedMemoryAllocationCheck(): Unit = {
+    s"rm -rf /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
-    s"rm /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     val memoryUtilization = Seq("/bin/bash", "-c",
     "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out gradualincreasecheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
   }
