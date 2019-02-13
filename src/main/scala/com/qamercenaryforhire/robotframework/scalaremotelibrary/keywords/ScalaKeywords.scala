@@ -164,4 +164,31 @@ class ScalaKeywords {
     s"/rfw/tools/ammonite-library/Ammonite --no-remote-logging /rfw/tools/ammonite-library/AmmoniteLibrary.scala scalaNativeFuzzTest"!!
   }
 
+  @RobotKeyword("Run Scala Native C Library CPU Utilization Check")
+  @ArgumentNames(Array())
+  def runScalaNativeCLibraryCPUUtilizationCheck(): Unit = {
+    s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
+    s"rm /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
+    val cpuUtilization = Seq("/bin/bash", "-c",
+    "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out cpucheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
+  }
+
+  @RobotKeyword("Run Scala Native C Library Memory Utilization Check")
+  @ArgumentNames(Array())
+  def runScalaNativeCLibraryMemoryUtilizationCheck(): Unit = {
+    s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
+    s"rm /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
+    val memoryUtilization = Seq("/bin/bash", "-c",
+    "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out memorycheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
+  }
+
+  @RobotKeyword("Run Scala Native C Library Increased Memory Allocation Check")
+  @ArgumentNames(Array())
+  def runScalaNativeCLibraryIncreasedMemoryAllocationCheck(): Unit = {
+    s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
+    s"rm /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
+    val memoryUtilization = Seq("/bin/bash", "-c",
+    "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out gradualincreasecheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
+  }
+
 }

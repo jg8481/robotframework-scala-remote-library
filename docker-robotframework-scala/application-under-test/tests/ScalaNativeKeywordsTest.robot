@@ -20,17 +20,29 @@ SERVER CHECK : Run the Just Text Scala keyword from a remote library and it shou
     Just Text Scala
     [Tags]    This_Is_Not_An_Actual_Test
 
-TEST 1 : Run the Ammonite keywords that will enter letters into the Scala Native application executable throught the command line. The Scala Native application will generate a message file.
+TEST 1 : Run the Scala Native C Library keyword that will gradually increase physical memory utilization to check how well the environment handles it.
+    Run Increased Memory Allocation Check
+    [Tags]    This_Is_An_Actual_Test
+
+TEST 2 : Run the Ammonite keywords that will enter letters into the Scala Native application executable through the command line. The Scala Native application will generate a message file.
     Run Ammonite Scala Native Executable Enter Letters Script
     [Tags]    This_Is_An_Actual_Test
 
-TEST 2 : Run the Ammonite keywords that will enter numbers into the Scala Native application executable throught the command line. The Scala Native application will generate a message file.
+TEST 3 : Run the Ammonite keywords that will enter numbers into the Scala Native application executable through the command line. The Scala Native application will generate a message file.
     Run Ammonite Scala Native Executable Enter Numbers Script
     [Tags]    This_Is_An_Actual_Test
 
-TEST 3 : Run the Ammonite keywords that will enter random ScalaCheck fuzz test data into the Scala Native application executable throught the command line. The Scala Native application will generate a message file.
+TEST 4 : Run the Ammonite keywords that will enter random ScalaCheck fuzz test data into the Scala Native application executable through the command line. The Scala Native application will generate a message file.
     Run Scala Check
     Run Ammonite Scala Native Executable Fuzz Test Script
+    [Tags]    This_Is_An_Actual_Test
+
+TEST 5 : Run the Scala Native C Library keyword that will check physical memory utilization after fuzzing the Scala Native application executable with ScalaCheck.
+    Run Memory Utilization Check
+    [Tags]    This_Is_An_Actual_Test
+
+TEST 6 : Run the Scala Native C Library keyword that will check CPU utilization after fuzzing the Scala Native application executable with ScalaCheck.
+    Run CPU Utilization Check
     [Tags]    This_Is_An_Actual_Test
 
 *** Keywords ***
@@ -89,8 +101,35 @@ Ammonite Fuzz Test
     Should Contain    ${ammonite}    This part of the message was created with robotframework-scala-remote-library Scala keywords
     Log    ${ammonite}
 
+Run CPU Utilization Check
+    Run Scala Native C Library CPU Utilization Check
+    ${val}=    Get File    /rfw/tools/test-data-logs/scalanativecustomclibrary.txt
+    Should Contain    ${val}    Current CPU utilization
+    Should Not Contain    ${val}    Current CPU utilization = 1.
+    Log To Console    ${val}
+    Log    ${val}
+
+Run Memory Utilization Check
+    Run Scala Native C Library Memory Utilization Check
+    ${val}=    Get File    /rfw/tools/test-data-logs/scalanativecustomclibrary.txt
+    Should Contain    ${val}    Check current memory usage (no allocation)
+    Should Not Contain    ${val}    NULL
+    Should Not Contain    ${val}    Segmentation fault (core dumped)
+    Log To Console    ${val}
+    Log    ${val}
+
+Run Increased Memory Allocation Check
+    Run Scala Native C Library Increased Memory Allocation Check
+    ${val}=    Get File    /rfw/tools/test-data-logs/scalanativecustomclibrary.txt
+    Should Contain    ${val}    Wait then check memory usage again...
+    Should Not Contain    ${val}    NULL
+    Should Not Contain    ${val}    Segmentation fault (core dumped)
+    Log To Console    ${val}
+    Log    ${val}
+
 Remove All Files
     Remove File    /rfw/message.txt
     Remove File    /rfw/simple-scala-native-example-application/message.txt
     Remove File    /rfw/tools/test-data-logs/fuzztestdata.txt
     Remove File    /rfw/tools/test-data-logs/scalachecktestdata.txt
+    Remove File    /rfw/tools/test-data-logs/scalanativecustomclibrary.txt
