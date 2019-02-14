@@ -3,6 +3,7 @@ package com.qamercenaryforhire.robotframework.scalaremotelibrary.keywords
 import org.robotframework.javalib.annotation.ArgumentNames
 import org.robotframework.javalib.annotation.RobotKeyword
 import org.robotframework.javalib.annotation.RobotKeywords
+import java.io.File
 import scala.io._
 import scala.util._
 import scala.sys._
@@ -165,8 +166,7 @@ class ScalaKeywords {
   def runScalaNativeCLibraryCPUUtilizationCheck(): Unit = {
     s"rm -rf /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
-    val cpuUtilization = Seq("/bin/bash", "-c",
-    "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out cpucheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
+    Seq("/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out", "cpucheck") #>> new File("/rfw/tools/test-data-logs/scalanativecustomclibrary.txt")!!
   }
 
   @RobotKeyword("Run Scala Native C Library Memory Utilization Check")
@@ -174,8 +174,7 @@ class ScalaKeywords {
   def runScalaNativeCLibraryMemoryUtilizationCheck(): Unit = {
     s"rm -rf /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
-    val memoryUtilization = Seq("/bin/bash", "-c",
-    "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out memorycheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
+    Seq("/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out", "memorycheck") #>> new File("/rfw/tools/test-data-logs/scalanativecustomclibrary.txt")!!
   }
 
   @RobotKeyword("Run Scala Native C Library Increased Memory Allocation Check")
@@ -183,8 +182,7 @@ class ScalaKeywords {
   def runScalaNativeCLibraryIncreasedMemoryAllocationCheck(): Unit = {
     s"rm -rf /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
     s"touch /rfw/tools/test-data-logs/scalanativecustomclibrary.txt".!
-    val memoryUtilization = Seq("/bin/bash", "-c",
-    "/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out gradualincreasecheck >> /rfw/tools/test-data-logs/scalanativecustomclibrary.txt").!!
+    Seq("/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out", "gradualincreasecheck") #>> new File("/rfw/tools/test-data-logs/scalanativecustomclibrary.txt")!!
   }
 
 }
