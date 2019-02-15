@@ -93,7 +93,7 @@
                   <manifest>
                      <addClasspath>true</addClasspath>
                      <classpathPrefix>src/main/scala</classpathPrefix>
-                     <mainClass>com.qamercenaryforhire.robotframework.scalaremotelibrary.ScalaRemoteLibraryServer</mainClass>
+                     <mainClass>scalaremotelibrary.ScalaRemoteLibraryServer</mainClass>
                   </manifest>
                </archive>
                <finalName>scala-remote-library-server-1.0</finalName>

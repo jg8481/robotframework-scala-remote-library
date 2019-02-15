@@ -1,4 +1,4 @@
-package com.qamercenaryforhire.robotframework.scalaremotelibrary.keywords
+package scalaremotelibrary.keywords
 
 import org.robotframework.javalib.annotation.ArgumentNames
 import org.robotframework.javalib.annotation.RobotKeyword
