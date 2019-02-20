@@ -2,7 +2,7 @@
 
 This is a working example of a Scala remote library based on a 2016 Robot Framework tutorial published by Thomas Jaspers.
 
-- [https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/](https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/)
+- [blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/](https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/)
 
 ## Useful Features And Capabilities
 
@@ -19,4 +19,4 @@ In addition to improving the exisiting features, I plan on working on the follow
 - Experiments with Gatling.io
 - Experiments with Javascript interop
 - Experiments with the Robotframework's RPA capabilities
-  - [https://robotframework.org/#rpa](https://robotframework.org/#rpa)
+  - [robotframework.org/#rpa](https://robotframework.org/#rpa)
