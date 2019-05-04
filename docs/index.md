@@ -18,5 +18,5 @@ The following are useful features, experiments, and capabilities provided by thi
 In addition to improving the exisiting features, I plan on working on the following.
 - Experiments with Gatling.io
 - Experiments with Javascript interop
-- Experiments with the Robotframework's RPA capabilities
+- Experiments with Robot Framework's RPA capabilities
   - [https://robotframework.org/#rpa](https://robotframework.org/#rpa)
