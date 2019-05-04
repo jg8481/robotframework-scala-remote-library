@@ -67,4 +67,5 @@ robot .
 - Pekka Klarck
 - Thomas Jaspers
 - Li Haoyi
+- Tatu Kairi
 - The entire Robot Framework community and its contributors
