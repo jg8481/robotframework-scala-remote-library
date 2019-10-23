@@ -23,7 +23,7 @@ I will be doing a lot of experiments and improvements.
     - (February 12, 2019) Created a working Scala Native custom C library that combines Scala and C to test gradually increasing memory allocation, memory utilization, and cpu utilization. More improvements will be coming soon.
 - **Experiments with Ammonite**
   - Progress:
-    - (February 7, 2019) Created a working Ammonite Library POC. Improvements and experiments will be ongoing. One of the interesting advantages of the Ammonite Library is that it does not require Maven to compile or run. Changes to the Ammonite Library can be done while the Scala keyword server is running. In general Ammonite has many capabilities. For example it has the scalaj-http library already built-in. Please check out the following for more information --> http://ammonite.io
+    - (February 7, 2019) Created a working Ammonite Library POC (proof-of-concept). Improvements and experiments will be ongoing. One of the interesting advantages of the Ammonite Library is that it does not require Maven to compile or run. Changes to the Ammonite Library can be done while the Scala keyword server is running. In general Ammonite has many capabilities. For example it has the scalaj-http library already built-in. Please check out the following for more information --> http://ammonite.io
 - **Experiments with ScalaCheck**
   - Progress:
     - (February 7, 2019) Created a working ScalaCheck keyword driven by the Ammonite Library POC.
