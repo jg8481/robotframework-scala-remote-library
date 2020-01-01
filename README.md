@@ -13,7 +13,7 @@ Why does this exist?
 ## Working On The Following
 
 I will be doing a lot of experiments and improvements.
-- **Docker and docker-compose capability (Windows users, please try this Docker container)**
+- **Docker and docker-compose capability (Windows users, please try this [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala))**
   - Progress:
     - (February 10, 2019) Created a Docker container and docker-compose file that will build a simple Scala Native application and run the Robot Framework Scala Remote Library to test the native executable.
 - ~~**sbt capability**~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
