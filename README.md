@@ -1,6 +1,6 @@
 # Robot Framework Scala Remote Library
 
-This is a working Scala remote library based on a 2016 Robot Framework tutorial published by Thomas Jaspers.
+This is **a working Scala remote library** based on a 2016 Robot Framework tutorial published by Thomas Jaspers.
 
 - https://blog.codecentric.de/en/2016/01/robot-framework-tutorial-2016-remote-server-keywords-in-java/
 
@@ -10,9 +10,9 @@ Why does this exist?
 - I was inspired by the simplicity of the example Thomas Jaspers made.
 - Instead of hiding this Scala example on my local machine, I prefer to share it.
 
-## Working On The Following
+## Ongoing Experiments
 
-I will be doing a lot of experiments and improvements.
+I will be doing a lot of experiments and improvements. This Scala remote library works fine by itself. The following are extra examples and capabilities that I think would be very helpful for any tester who is interested in trying out different Scala features and tools.
 - **Docker and docker-compose capability (Windows users, please try this [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala))**
   - Progress:
     - (February 10, 2019) Created a Docker container and docker-compose file that will build a simple Scala Native application and run the Robot Framework Scala Remote Library to test the native executable.
