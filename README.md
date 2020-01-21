@@ -10,27 +10,7 @@ Why does this exist?
 - I was inspired by the simplicity of the example Thomas Jaspers made.
 - Instead of hiding this Scala remote library on my local machine, I prefer to share it.
 
-## Ongoing Experiments
-
-Over time, I plan on doing a lot of experiments and improvements with this library. In general, this Scala remote library works fine by itself. The following are extra examples and capabilities that I think would be very helpful for any tester who is interested in trying out different Scala features and combining it with other tools (such as Docker).
-- **Docker and docker-compose capability (Windows users, please try this [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala))**
-  - Progress:
-    - (February 10, 2019 - **Ready To Use**) Created a Docker container and docker-compose file that will build a simple Scala Native application and run the Robot Framework Scala Remote Library to test the native executable.
-- ~~**sbt capability**~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
-- **Experiments with Scala Native**
-  - Progress:
-    - (February 10, 2019 - **Ready To Use**) Created a working example of a Scala Native application that will take text from the command line and pipe it into a text file.
-    - (February 12, 2019 - **Ready To Use**) Created a working Scala Native custom C library that combines Scala and C to test gradually increasing memory allocation, memory utilization, and cpu utilization. More improvements will be coming soon.
-- **Experiments with Ammonite**
-  - Progress:
-    - (February 7, 2019 - **Ready To Use**) Created a working Ammonite Library. Improvements and experiments will be ongoing. One of the interesting advantages of the Ammonite Library is that it does not require Maven to compile or run. Changes to the Ammonite Library can be done while the Scala keyword server is running. In general Ammonite has many capabilities. For example it has the scalaj-http library already built-in. Please check out the following for more information --> http://ammonite.io
-- **Experiments with ScalaCheck**
-  - Progress:
-    - (February 7, 2019 - **Ready To Use**) Created a working ScalaCheck keyword driven by the Ammonite Library.
-- **Experiments with Gatling.io**
-- **Experiments with Javascript interop**
-
-## Getting Started (Only for Mac OSX or Linux users)
+## Getting Started (Mac OSX or Linux users)
 
 1) Install **cURL** (must be installed in /usr/bin/curl), **Java 8**, **Maven**, and **Scala** on your machine. The rest of these steps assumes that you also have Robot Framework installed locally on your machine. If not please go here...
 
@@ -60,7 +40,31 @@ scala scala-remote-library-server-1.0.jar
 robot ./ScalaKeywordsTest.robot
 ```
 
-If you want to run the other examples please use the [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala).
+If you want to run the Scala Native examples, please use the [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala).
+
+## Getting Started (Windows users)
+
+Windows users should use this [Docker container.](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala)
+
+## Ongoing Experiments
+
+Over time, I plan on doing a lot of experiments and improvements with this library. In general, this Scala remote library works fine by itself. The following are extra examples and capabilities that I think would be very helpful for any tester who is interested in trying out different Scala features and combining it with other tools (such as Docker).
+- **Docker and docker-compose capability**
+  - Progress:
+    - (February 10, 2019 - **Ready To Use**) Created a Docker container and docker-compose file that will build a simple Scala Native application and run the Robot Framework Scala Remote Library to test the native executable.
+- ~~**sbt capability**~~ (Please use Maven. For more details go to --> https://github.com/jg8481/robotframework-scala-remote-library/issues/1)
+- **Experiments with Scala Native**
+  - Progress:
+    - (February 10, 2019 - **Ready To Use**) Created a working example of a Scala Native application that will take text from the command line and pipe it into a text file.
+    - (February 12, 2019 - **Ready To Use**) Created a working Scala Native custom C library that combines Scala and C to test gradually increasing memory allocation, memory utilization, and cpu utilization. More improvements will be coming soon.
+- **Experiments with Ammonite**
+  - Progress:
+    - (February 7, 2019 - **Ready To Use**) Created a working Ammonite Library. Improvements and experiments will be ongoing. One of the interesting advantages of the Ammonite Library is that it does not require Maven to compile or run. Changes to the Ammonite Library can be done while the Scala keyword server is running. In general Ammonite has many capabilities. For example it has the scalaj-http library already built-in. Please check out the following for more information --> http://ammonite.io
+- **Experiments with ScalaCheck**
+  - Progress:
+    - (February 7, 2019 - **Ready To Use**) Created a working ScalaCheck keyword driven by the Ammonite Library.
+- **Experiments with Gatling.io**
+- **Experiments with Javascript interop**
 
 ***
 
