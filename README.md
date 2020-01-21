@@ -12,7 +12,7 @@ Why does this exist?
 
 ## Ongoing Experiments
 
-I will be doing a lot of experiments and improvements. This Scala remote library works fine by itself. The following are extra examples and capabilities that I think would be very helpful for any tester who is interested in trying out different Scala features and tools.
+Over time, I plan on doing a lot of experiments and improvements with this library. In general, this Scala remote library works fine by itself. The following are extra examples and capabilities that I think would be very helpful for any tester who is interested in trying out different Scala features and combining it with other tools (such as Docker).
 - **Docker and docker-compose capability (Windows users, please try this [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala))**
   - Progress:
     - (February 10, 2019) Created a Docker container and docker-compose file that will build a simple Scala Native application and run the Robot Framework Scala Remote Library to test the native executable.
