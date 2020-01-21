@@ -8,7 +8,7 @@ Why does this exist?
 - I want to learn Scala. It does a lot of neat stuff.
 - I wanted to learn how the Robot Framework Remote Interface works.
 - I was inspired by the simplicity of the example Thomas Jaspers made.
-- Instead of hiding this Scala example on my local machine, I prefer to share it.
+- Instead of hiding this Scala remote library on my local machine, I prefer to share it.
 
 ## Ongoing Experiments
 
