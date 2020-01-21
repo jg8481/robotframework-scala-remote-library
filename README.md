@@ -57,8 +57,10 @@ scala scala-remote-library-server-1.0.jar
 4) Go into `tests` then run the following.
 
 ```
-robot .
+robot ./ScalaKeywordsTest.robot
 ```
+
+If you want to run the other examples please use the [Docker container](https://github.com/jg8481/robotframework-scala-remote-library/tree/master/docker-robotframework-scala).
 
 ***
 
