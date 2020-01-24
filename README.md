@@ -21,6 +21,8 @@ Why does this exist?
 ```
 mvn dependency:copy-dependencies
 mvn package
+
+#After updating the server code it's a good practice to run `mvn clean`, then run those commands again.
 ```
 
 3) Go into `target` then run one of the following commands to start the server.
