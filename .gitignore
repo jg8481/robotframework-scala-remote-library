@@ -1,1 +1,5 @@
 *.pyc
+.DS_Store
+docker-robotframework-scala/.DS_Store
+docker-robotframework-scala/application-under-test/.DS_Store
+docker-robotframework-scala/application-under-test/tools/.DS_Store
