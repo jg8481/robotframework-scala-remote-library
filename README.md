@@ -20,7 +20,6 @@ Why does this exist?
 
 ```
 mvn dependency:copy-dependencies
-mvn clean
 mvn package
 ```
 
