@@ -126,6 +126,7 @@
                         <exclude>tools/ammonite-library/Ammonite</exclude>
                         <exclude>tools/ammonite-library/AmmoniteInitialize.scala</exclude>
                         <exclude>tools/ammonite-library/AmmoniteLibrary.scala</exclude>
+                        <exclude>tools/ammonite-library/AmmoniteGatlingScenario.scala</exclude>
                         <exclude>tools/ammonite-library/LICENSE</exclude>
                         <exclude>tools/test-data-logs/.gitkeep</exclude>
                      </excludes>

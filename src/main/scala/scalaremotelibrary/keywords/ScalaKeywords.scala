@@ -185,4 +185,11 @@ class ScalaKeywords {
     Seq("/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out", "gradualincreasecheck") #>> new File("/rfw/tools/test-data-logs/scalanativecustomclibrary.txt")!!
   }
 
+  @RobotKeyword("Run Gatling Scenario")
+  @ArgumentNames(Array())
+  def runGatlingScenario(): String = {
+    val path = "pwd".!!.trim
+    s"$path/tools/ammonite-library/Ammonite --no-remote-logging $path/tools/ammonite-library/AmmoniteGatlingScenario.scala"!!
+  }
+
 }
