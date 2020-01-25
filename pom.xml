@@ -129,6 +129,9 @@
                         <exclude>tools/ammonite-library/AmmoniteGatlingScenario.scala</exclude>
                         <exclude>tools/ammonite-library/LICENSE</exclude>
                         <exclude>tools/test-data-logs/.gitkeep</exclude>
+                        <exclude>tools/scala-remote-library-gatling-jar/src/main/scala/scalaremotelibrarygatlingjar/GatlingLoadTestSimulationOne.scala</exclude>
+                        <exclude>tools/scala-remote-library-gatling-jar/src/main/scala/scalaremotelibrarygatlingjar/GatlingLoadTestSimulationTwo.scala</exclude>
+                        <exclude>tools/scala-remote-library-gatling-jar/pom.xml</exclude>
                      </excludes>
                   </fileset>
                </filesets>
