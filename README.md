@@ -64,6 +64,8 @@ Over time, I plan on doing a lot of experiments and improvements with this libra
   - Progress:
     - (February 7, 2019 - **Ready To Use**) Created a working ScalaCheck keyword driven by the Ammonite Library.
 - **Experiments with Gatling.io**
+  - Progress:
+    - (January 27, 2020 - **Ready To Use**) Created working Gatling.io keywords that can run inside a Docker container and on a local Mac OSX or Linux machine.
 - **Experiments with Javascript interop**
 
 ***
