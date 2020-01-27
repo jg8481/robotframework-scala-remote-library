@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200123 20:52:12.492" generator="Robot 3.1.1 (Python 2.7.15 on darwin)">
+<robot rpa="false" generated="20200126 19:55:13.606" generator="Robot 3.1.1 (Python 2.7.15 on darwin)">
 <suite source="/Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/tests" id="s1" name="Tests">
 <suite source="/Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/tests/ScalaKeywordsTest.robot" id="s1-s1" name="ScalaKeywordsTest">
 <kw type="setup" name="Ammonite Initialization" library="Remote">
 <doc>Ammonite Initialization</doc>
-<msg timestamp="20200123 20:52:19.626" level="INFO">Compiling (synthetic)/ammonite/predef/interpBridge.sc
-Compiling (synthetic)/ammonite/predef/DefaultPredef.sc
-Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/tools/ammonite-library/AmmoniteInitialize.scala
-Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/tools/ammonite-library/AmmoniteInitialize.scala #2</msg>
-<status status="PASS" endtime="20200123 20:52:19.627" starttime="20200123 20:52:13.583"></status>
+<status status="PASS" endtime="20200126 19:55:16.097" starttime="20200126 19:55:14.766"></status>
 </kw>
 <test id="s1-s1-t1" name="SERVER CHECK : Run the Say Something keyword from a remote library and it should display in the log.html result file.">
 <kw name="Say Something Scala">
@@ -20,32 +16,32 @@ Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/t
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20200123 20:52:19.634" level="INFO">"Hello everyone"</msg>
-<msg timestamp="20200123 20:52:19.634" level="INFO">${val} = </msg>
-<status status="PASS" endtime="20200123 20:52:19.634" starttime="20200123 20:52:19.628"></status>
+<msg timestamp="20200126 19:55:16.103" level="INFO">"Hello everyone"</msg>
+<msg timestamp="20200126 19:55:16.104" level="INFO">${val} = </msg>
+<status status="PASS" endtime="20200126 19:55:16.104" starttime="20200126 19:55:16.099"></status>
 </kw>
 <kw name="Should Be Empty" library="BuiltIn">
 <doc>Verifies that the given item is empty.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:19.635" level="INFO">Length is 0</msg>
-<status status="PASS" endtime="20200123 20:52:19.635" starttime="20200123 20:52:19.634"></status>
+<msg timestamp="20200126 19:55:16.104" level="INFO">Length is 0</msg>
+<status status="PASS" endtime="20200126 19:55:16.104" starttime="20200126 19:55:16.104"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:19.635" level="INFO"></msg>
-<status status="PASS" endtime="20200123 20:52:19.635" starttime="20200123 20:52:19.635"></status>
+<msg timestamp="20200126 19:55:16.104" level="INFO"></msg>
+<status status="PASS" endtime="20200126 19:55:16.104" starttime="20200126 19:55:16.104"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:19.635" starttime="20200123 20:52:19.627"></status>
+<status status="PASS" endtime="20200126 19:55:16.105" starttime="20200126 19:55:16.098"></status>
 </kw>
 <tags>
 <tag>This_Is_Not_An_Actual_Test</tag>
 </tags>
-<status status="PASS" endtime="20200123 20:52:19.635" critical="yes" starttime="20200123 20:52:19.627"></status>
+<status status="PASS" endtime="20200126 19:55:16.105" critical="yes" starttime="20200126 19:55:16.098"></status>
 </test>
 <test id="s1-s1-t2" name="SERVER CHECK : Run the Check String keyword from a remote library and it should be equal to String.">
 <kw name="Check String Scala">
@@ -57,8 +53,8 @@ Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/t
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20200123 20:52:19.639" level="INFO">${val} = String</msg>
-<status status="PASS" endtime="20200123 20:52:19.639" starttime="20200123 20:52:19.637"></status>
+<msg timestamp="20200126 19:55:16.108" level="INFO">${val} = String</msg>
+<status status="PASS" endtime="20200126 19:55:16.108" starttime="20200126 19:55:16.106"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -66,32 +62,32 @@ Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/t
 <arg>${val}</arg>
 <arg>String</arg>
 </arguments>
-<msg timestamp="20200123 20:52:19.640" level="INFO">Argument types are:
+<msg timestamp="20200126 19:55:16.108" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200123 20:52:19.640" starttime="20200123 20:52:19.639"></status>
+<status status="PASS" endtime="20200126 19:55:16.108" starttime="20200126 19:55:16.108"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:19.640" starttime="20200123 20:52:19.640"></status>
+<status status="PASS" endtime="20200126 19:55:16.109" starttime="20200126 19:55:16.108"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:19.640" level="INFO">String</msg>
-<status status="PASS" endtime="20200123 20:52:19.640" starttime="20200123 20:52:19.640"></status>
+<msg timestamp="20200126 19:55:16.109" level="INFO">String</msg>
+<status status="PASS" endtime="20200126 19:55:16.109" starttime="20200126 19:55:16.109"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:19.641" starttime="20200123 20:52:19.636"></status>
+<status status="PASS" endtime="20200126 19:55:16.109" starttime="20200126 19:55:16.105"></status>
 </kw>
 <tags>
 <tag>This_Is_Not_An_Actual_Test</tag>
 </tags>
-<status status="PASS" endtime="20200123 20:52:19.641" critical="yes" starttime="20200123 20:52:19.636"></status>
+<status status="PASS" endtime="20200126 19:55:16.109" critical="yes" starttime="20200126 19:55:16.105"></status>
 </test>
 <test id="s1-s1-t3" name="SERVER CHECK : Run the Just Text Scala keyword from a remote library and it should display in the log.html result file.">
 <kw name="Just Text Scala">
@@ -100,8 +96,8 @@ Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/t
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20200123 20:52:19.644" level="INFO">${val} = Nothing special</msg>
-<status status="PASS" endtime="20200123 20:52:19.644" starttime="20200123 20:52:19.642"></status>
+<msg timestamp="20200126 19:55:16.112" level="INFO">${val} = Nothing special</msg>
+<status status="PASS" endtime="20200126 19:55:16.112" starttime="20200126 19:55:16.110"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -109,32 +105,32 @@ Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/t
 <arg>${val}</arg>
 <arg>Nothing special</arg>
 </arguments>
-<msg timestamp="20200123 20:52:19.644" level="INFO">Argument types are:
+<msg timestamp="20200126 19:55:16.113" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200123 20:52:19.644" starttime="20200123 20:52:19.644"></status>
+<status status="PASS" endtime="20200126 19:55:16.113" starttime="20200126 19:55:16.112"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:19.645" starttime="20200123 20:52:19.644"></status>
+<status status="PASS" endtime="20200126 19:55:16.113" starttime="20200126 19:55:16.113"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${val}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:19.645" level="INFO">Nothing special</msg>
-<status status="PASS" endtime="20200123 20:52:19.645" starttime="20200123 20:52:19.645"></status>
+<msg timestamp="20200126 19:55:16.114" level="INFO">Nothing special</msg>
+<status status="PASS" endtime="20200126 19:55:16.114" starttime="20200126 19:55:16.113"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:19.645" starttime="20200123 20:52:19.642"></status>
+<status status="PASS" endtime="20200126 19:55:16.114" starttime="20200126 19:55:16.110"></status>
 </kw>
 <tags>
 <tag>This_Is_Not_An_Actual_Test</tag>
 </tags>
-<status status="PASS" endtime="20200123 20:52:19.645" critical="yes" starttime="20200123 20:52:19.641"></status>
+<status status="PASS" endtime="20200126 19:55:16.114" critical="yes" starttime="20200126 19:55:16.109"></status>
 </test>
 <test id="s1-s1-t4" name="TEST 1 : Run the Ammonite keywords that will send an HTTP Post request.">
 <kw name="Run Ammonite Post Request Script">
@@ -143,11 +139,10 @@ Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/t
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:24.754" level="INFO">Compiling /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/tools/ammonite-library/AmmoniteLibrary.scala</msg>
-<msg timestamp="20200123 20:52:24.754" level="INFO">${ammonite} = {"title":"qa","body":"test","userId":"1","id":101}
+<msg timestamp="20200126 19:55:17.269" level="INFO">${ammonite} = {"title":"qa","body":"test","userId":"1","id":101}
 Post Request Script completed.
 </msg>
-<status status="PASS" endtime="20200123 20:52:24.754" starttime="20200123 20:52:19.646"></status>
+<status status="PASS" endtime="20200126 19:55:17.269" starttime="20200126 19:55:16.115"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -155,31 +150,31 @@ Post Request Script completed.
 <arg>${ammonite}</arg>
 <arg>"title":"qa"</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:24.755" starttime="20200123 20:52:24.755"></status>
+<status status="PASS" endtime="20200126 19:55:17.270" starttime="20200126 19:55:17.269"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:24.755" starttime="20200123 20:52:24.755"></status>
+<status status="PASS" endtime="20200126 19:55:17.270" starttime="20200126 19:55:17.270"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:24.756" level="INFO">{"title":"qa","body":"test","userId":"1","id":101}
+<msg timestamp="20200126 19:55:17.271" level="INFO">{"title":"qa","body":"test","userId":"1","id":101}
 Post Request Script completed.
 </msg>
-<status status="PASS" endtime="20200123 20:52:24.756" starttime="20200123 20:52:24.755"></status>
+<status status="PASS" endtime="20200126 19:55:17.271" starttime="20200126 19:55:17.270"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:24.756" starttime="20200123 20:52:19.646"></status>
+<status status="PASS" endtime="20200126 19:55:17.271" starttime="20200126 19:55:16.115"></status>
 </kw>
 <tags>
 <tag>This_Is_An_Actual_Test</tag>
 </tags>
-<status status="PASS" endtime="20200123 20:52:24.756" critical="yes" starttime="20200123 20:52:19.645"></status>
+<status status="PASS" endtime="20200126 19:55:17.271" critical="yes" starttime="20200126 19:55:16.114"></status>
 </test>
 <test id="s1-s1-t5" name="TEST 2 : Run the Ammonite keywords that will send an HTTP Get request.">
 <kw name="Run Ammonite Get Request Script">
@@ -188,13 +183,13 @@ Post Request Script completed.
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:25.539" level="INFO">${ammonite} = [
+<msg timestamp="20200126 19:55:18.082" level="INFO">${ammonite} = [
   {
     "userId": 1,
     "id": 1,
     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita ...</msg>
-<status status="PASS" endtime="20200123 20:52:25.539" starttime="20200123 20:52:24.757"></status>
+<status status="PASS" endtime="20200126 19:55:18.082" starttime="20200126 19:55:17.272"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -202,14 +197,14 @@ Post Request Script completed.
 <arg>${ammonite}</arg>
 <arg>"body":</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:25.539" starttime="20200123 20:52:25.539"></status>
+<status status="PASS" endtime="20200126 19:55:18.083" starttime="20200126 19:55:18.082"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:25.540" level="INFO">[
+<msg timestamp="20200126 19:55:18.083" level="INFO">[
   {
     "userId": 1,
     "id": 1,
@@ -813,14 +808,14 @@ Post Request Script completed.
 ]
 Get Request Script completed.
 </msg>
-<status status="PASS" endtime="20200123 20:52:25.540" starttime="20200123 20:52:25.540"></status>
+<status status="PASS" endtime="20200126 19:55:18.084" starttime="20200126 19:55:18.083"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:25.540" starttime="20200123 20:52:24.757"></status>
+<status status="PASS" endtime="20200126 19:55:18.084" starttime="20200126 19:55:17.272"></status>
 </kw>
 <tags>
 <tag>This_Is_An_Actual_Test</tag>
 </tags>
-<status status="PASS" endtime="20200123 20:52:25.541" critical="yes" starttime="20200123 20:52:24.756"></status>
+<status status="PASS" endtime="20200126 19:55:18.084" critical="yes" starttime="20200126 19:55:17.271"></status>
 </test>
 <test id="s1-s1-t6" name="TEST 3 : Run the Ammonite keywords that will perform an HTTP fuzz test.">
 <kw name="Run Scala Check">
@@ -832,9 +827,9 @@ Setting it to 2 will generate a heavy amount of fuzz test data.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:35.044" starttime="20200123 20:52:25.542"></status>
+<status status="PASS" endtime="20200126 19:55:27.612" starttime="20200126 19:55:18.085"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:35.044" starttime="20200123 20:52:25.541"></status>
+<status status="PASS" endtime="20200126 19:55:27.612" starttime="20200126 19:55:18.085"></status>
 </kw>
 <kw name="Run Ammonite Fuzz Test Script">
 <doc>If you want to be really mean and try to crash your own application-under-test (do not try to crash the jsonplaceholder.typicode.com website!!!), then
@@ -846,28 +841,25 @@ WARNING : IF YOU RUN THIS KEYWORD WITH A LONG DURATION IT'S AT YOUR OWN RISK.</d
 <arg>5 times</arg>
 <arg>Ammonite Fuzz Test</arg>
 </arguments>
-<msg timestamp="20200123 20:52:35.045" level="INFO">Repeating keyword, round 1/5.</msg>
+<msg timestamp="20200126 19:55:27.613" level="INFO">Repeating keyword, round 1/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:36.029" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20200126 19:55:28.456" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  3096    0   574  100  2522   2266   9958 --:--:-- --:--:-- --:--:--  9929
-100  3096    0   574  100  2522   2265   9952 --:--:-- --:--:-- --:--:--  9929</msg>
-<msg timestamp="20200123 20:52:36.030" level="INFO">${ammonite} = HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:36 GMT
+100  1390    0   574  100   816   4597   6535 --:--:-- --:--:-- --:--:--  6580</msg>
+<msg timestamp="20200126 19:55:28.457" level="INFO">${ammonite} = HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:28 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfd...</msg>
-<status status="PASS" endtime="20200123 20:52:36.030" starttime="20200123 20:52:35.045"></status>
+Set-Cookie: __cfduid=d43a45ee1c20f95c981...</msg>
+<status status="PASS" endtime="20200126 19:55:28.457" starttime="20200126 19:55:27.613"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -875,21 +867,19 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:36.030" starttime="20200123 20:52:36.030"></status>
+<status status="PASS" endtime="20200126 19:55:28.458" starttime="20200126 19:55:28.458"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:36.031" level="INFO">HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:36 GMT
+<msg timestamp="20200126 19:55:28.458" level="INFO">HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:28 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=dd3355aebddf3793d9ff5b7d18e6c62341579830755; expires=Sun, 23-Feb-20 01:52:35 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=d43a45ee1c20f95c98187d417cb23d4071580086528; expires=Wed, 26-Feb-20 00:55:28 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -899,9 +889,9 @@ Expires: -1
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 559e5e6fd86ee740-EWR
+CF-RAY: 55b6c2e22848f051-EWR
 
-SyntaxError: Unexpected token  in JSON at position 10
+SyntaxError: Unexpected token 涘 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -912,32 +902,29 @@ SyntaxError: Unexpected token  in JSON at position 10
     at endReadableNT (_stream_readable.js:1145:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" endtime="20200123 20:52:36.031" starttime="20200123 20:52:36.031"></status>
+<status status="PASS" endtime="20200126 19:55:28.458" starttime="20200126 19:55:28.458"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:36.031" starttime="20200123 20:52:35.045"></status>
+<status status="PASS" endtime="20200126 19:55:28.459" starttime="20200126 19:55:27.613"></status>
 </kw>
-<msg timestamp="20200123 20:52:36.031" level="INFO">Repeating keyword, round 2/5.</msg>
+<msg timestamp="20200126 19:55:28.459" level="INFO">Repeating keyword, round 2/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:37.029" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20200126 19:55:29.481" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  3096    0   574  100  2522   2164   9508 --:--:-- --:--:-- --:--:--  9481
-100  3096    0   574  100  2522   2141   9407 --:--:-- --:--:-- --:--:--  9375</msg>
-<msg timestamp="20200123 20:52:37.029" level="INFO">${ammonite} = HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:37 GMT
+100  1390    0   574  100   816   1865   2651 --:--:-- --:--:-- --:--:--  2657</msg>
+<msg timestamp="20200126 19:55:29.482" level="INFO">${ammonite} = HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:29 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfd...</msg>
-<status status="PASS" endtime="20200123 20:52:37.029" starttime="20200123 20:52:36.031"></status>
+Set-Cookie: __cfduid=d1ac4502e0f0cbfc705...</msg>
+<status status="PASS" endtime="20200126 19:55:29.482" starttime="20200126 19:55:28.459"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -945,21 +932,19 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:37.030" starttime="20200123 20:52:37.029"></status>
+<status status="PASS" endtime="20200126 19:55:29.482" starttime="20200126 19:55:29.482"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:37.030" level="INFO">HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:37 GMT
+<msg timestamp="20200126 19:55:29.483" level="INFO">HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:29 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d080b1de05f69f406b48b8b93daca09311579830756; expires=Sun, 23-Feb-20 01:52:36 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=d1ac4502e0f0cbfc7054ce8fe8ec996da1580086529; expires=Wed, 26-Feb-20 00:55:29 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -969,9 +954,9 @@ Expires: -1
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 559e5e75ff4bc5c0-EWR
+CF-RAY: 55b6c2e77b88e85d-EWR
 
-SyntaxError: Unexpected token  in JSON at position 10
+SyntaxError: Unexpected token 涘 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -982,32 +967,29 @@ SyntaxError: Unexpected token  in JSON at position 10
     at endReadableNT (_stream_readable.js:1145:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" endtime="20200123 20:52:37.030" starttime="20200123 20:52:37.030"></status>
+<status status="PASS" endtime="20200126 19:55:29.483" starttime="20200126 19:55:29.482"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:37.030" starttime="20200123 20:52:36.031"></status>
+<status status="PASS" endtime="20200126 19:55:29.483" starttime="20200126 19:55:28.459"></status>
 </kw>
-<msg timestamp="20200123 20:52:37.030" level="INFO">Repeating keyword, round 3/5.</msg>
+<msg timestamp="20200126 19:55:29.483" level="INFO">Repeating keyword, round 3/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:38.040" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20200126 19:55:30.392" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  3096    0   574  100  2522   1767   7764 --:--:-- --:--:-- --:--:--  7760
-100  3096    0   574  100  2522   1765   7758 --:--:-- --:--:-- --:--:--  7760</msg>
-<msg timestamp="20200123 20:52:38.041" level="INFO">${ammonite} = HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:38 GMT
+100  1390    0   574  100   816   2932   4169 --:--:-- --:--:-- --:--:--  4184</msg>
+<msg timestamp="20200126 19:55:30.392" level="INFO">${ammonite} = HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:30 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfd...</msg>
-<status status="PASS" endtime="20200123 20:52:38.041" starttime="20200123 20:52:37.031"></status>
+Set-Cookie: __cfduid=df05f775989b217ae3d...</msg>
+<status status="PASS" endtime="20200126 19:55:30.392" starttime="20200126 19:55:29.483"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1015,21 +997,19 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:38.041" starttime="20200123 20:52:38.041"></status>
+<status status="PASS" endtime="20200126 19:55:30.393" starttime="20200126 19:55:30.392"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:38.041" level="INFO">HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:38 GMT
+<msg timestamp="20200126 19:55:30.393" level="INFO">HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:30 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=ddd554ef8ef36fc4bfae77b9705fd48521579830757; expires=Sun, 23-Feb-20 01:52:37 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=df05f775989b217ae3d162042099744571580086530; expires=Wed, 26-Feb-20 00:55:30 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -1039,9 +1019,9 @@ Expires: -1
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 559e5e7bead7c5c4-EWR
+CF-RAY: 55b6c2edc9a191e6-EWR
 
-SyntaxError: Unexpected token  in JSON at position 10
+SyntaxError: Unexpected token 涘 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -1052,31 +1032,29 @@ SyntaxError: Unexpected token  in JSON at position 10
     at endReadableNT (_stream_readable.js:1145:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" endtime="20200123 20:52:38.042" starttime="20200123 20:52:38.041"></status>
+<status status="PASS" endtime="20200126 19:55:30.393" starttime="20200126 19:55:30.393"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:38.042" starttime="20200123 20:52:37.031"></status>
+<status status="PASS" endtime="20200126 19:55:30.393" starttime="20200126 19:55:29.483"></status>
 </kw>
-<msg timestamp="20200123 20:52:38.042" level="INFO">Repeating keyword, round 4/5.</msg>
+<msg timestamp="20200126 19:55:30.393" level="INFO">Repeating keyword, round 4/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:38.979" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20200126 19:55:31.314" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  3096    0   574  100  2522   2240   9842 --:--:-- --:--:-- --:--:--  9851</msg>
-<msg timestamp="20200123 20:52:38.979" level="INFO">${ammonite} = HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:38 GMT
+100  1390    0   574  100   816   2496   3548 --:--:-- --:--:-- --:--:--  3563</msg>
+<msg timestamp="20200126 19:55:31.314" level="INFO">${ammonite} = HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:31 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfd...</msg>
-<status status="PASS" endtime="20200123 20:52:38.979" starttime="20200123 20:52:38.042"></status>
+Set-Cookie: __cfduid=d2168ee7b72c3e8004f...</msg>
+<status status="PASS" endtime="20200126 19:55:31.314" starttime="20200126 19:55:30.394"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1084,21 +1062,19 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:38.980" starttime="20200123 20:52:38.980"></status>
+<status status="PASS" endtime="20200126 19:55:31.315" starttime="20200126 19:55:31.315"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:38.980" level="INFO">HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:38 GMT
+<msg timestamp="20200126 19:55:31.315" level="INFO">HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:31 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d523e3a3bd91dd1ab19a6976380bb19481579830758; expires=Sun, 23-Feb-20 01:52:38 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=d2168ee7b72c3e8004f04cac25ec3cf941580086531; expires=Wed, 26-Feb-20 00:55:31 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -1108,9 +1084,9 @@ Expires: -1
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 559e5e823f3ce6b0-EWR
+CF-RAY: 55b6c2f388bee718-EWR
 
-SyntaxError: Unexpected token  in JSON at position 10
+SyntaxError: Unexpected token 涘 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -1121,31 +1097,30 @@ SyntaxError: Unexpected token  in JSON at position 10
     at endReadableNT (_stream_readable.js:1145:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" endtime="20200123 20:52:38.980" starttime="20200123 20:52:38.980"></status>
+<status status="PASS" endtime="20200126 19:55:31.315" starttime="20200126 19:55:31.315"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:38.981" starttime="20200123 20:52:38.042"></status>
+<status status="PASS" endtime="20200126 19:55:31.316" starttime="20200126 19:55:30.393"></status>
 </kw>
-<msg timestamp="20200123 20:52:38.981" level="INFO">Repeating keyword, round 5/5.</msg>
+<msg timestamp="20200126 19:55:31.316" level="INFO">Repeating keyword, round 5/5.</msg>
 <kw name="Ammonite Fuzz Test">
 <kw name="Run Ammonite Http Fuzz Test" library="Remote">
 <doc>Run Ammonite HTTP Fuzz Test</doc>
 <assign>
 <var>${ammonite}</var>
 </assign>
-<msg timestamp="20200123 20:52:39.905" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+<msg timestamp="20200126 19:55:32.190" level="INFO">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  3096    0   574  100  2522   2434  10696 --:--:-- --:--:-- --:--:-- 10731</msg>
-<msg timestamp="20200123 20:52:39.905" level="INFO">${ammonite} = HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:39 GMT
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  1390    0   574  100   816   3103   4412 --:--:-- --:--:-- --:--:--  4410</msg>
+<msg timestamp="20200126 19:55:32.190" level="INFO">${ammonite} = HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:32 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfd...</msg>
-<status status="PASS" endtime="20200123 20:52:39.905" starttime="20200123 20:52:38.981"></status>
+Set-Cookie: __cfduid=daaf0033d702e05e050...</msg>
+<status status="PASS" endtime="20200126 19:55:32.190" starttime="20200126 19:55:31.316"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1153,21 +1128,19 @@ Set-Cookie: __cfd...</msg>
 <arg>${ammonite}</arg>
 <arg>500</arg>
 </arguments>
-<status status="PASS" endtime="20200123 20:52:39.905" starttime="20200123 20:52:39.905"></status>
+<status status="PASS" endtime="20200126 19:55:32.190" starttime="20200126 19:55:32.190"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ammonite}</arg>
 </arguments>
-<msg timestamp="20200123 20:52:39.906" level="INFO">HTTP/1.1 100 Continue
-
-HTTP/1.1 500 Internal Server Error
-Date: Fri, 24 Jan 2020 01:52:39 GMT
+<msg timestamp="20200126 19:55:32.191" level="INFO">HTTP/1.1 500 Internal Server Error
+Date: Mon, 27 Jan 2020 00:55:32 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d71f2c31340bceb8d8f30d76dc01946001579830759; expires=Sun, 23-Feb-20 01:52:39 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=daaf0033d702e05e05051b457969080bd1580086532; expires=Wed, 26-Feb-20 00:55:32 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 X-Powered-By: Express
 Vary: Origin, Accept-Encoding
 Access-Control-Allow-Credentials: true
@@ -1177,9 +1150,9 @@ Expires: -1
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 559e5e882ca9efc0-EWR
+CF-RAY: 55b6c2f91fa1f045-EWR
 
-SyntaxError: Unexpected token  in JSON at position 10
+SyntaxError: Unexpected token 涘 in JSON at position 10
     at JSON.parse (&lt;anonymous&gt;)
     at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
     at /app/node_modules/body-parser/lib/read.js:121:18
@@ -1190,35 +1163,1638 @@ SyntaxError: Unexpected token  in JSON at position 10
     at endReadableNT (_stream_readable.js:1145:12)
     at process._tickCallback (internal/process/next_tick.js:63:19)
 </msg>
-<status status="PASS" endtime="20200123 20:52:39.906" starttime="20200123 20:52:39.905"></status>
+<status status="PASS" endtime="20200126 19:55:32.191" starttime="20200126 19:55:32.191"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:39.906" starttime="20200123 20:52:38.981"></status>
+<status status="PASS" endtime="20200126 19:55:32.191" starttime="20200126 19:55:31.316"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:39.906" starttime="20200123 20:52:35.045"></status>
+<status status="PASS" endtime="20200126 19:55:32.191" starttime="20200126 19:55:27.612"></status>
 </kw>
-<status status="PASS" endtime="20200123 20:52:39.906" starttime="20200123 20:52:35.044"></status>
+<status status="PASS" endtime="20200126 19:55:32.191" starttime="20200126 19:55:27.612"></status>
 </kw>
 <tags>
 <tag>This_Is_An_Actual_Test</tag>
 </tags>
-<status status="PASS" endtime="20200123 20:52:39.906" critical="yes" starttime="20200123 20:52:25.541"></status>
+<status status="PASS" endtime="20200126 19:55:32.191" critical="yes" starttime="20200126 19:55:18.085"></status>
 </test>
-<status status="PASS" endtime="20200123 20:52:39.908" starttime="20200123 20:52:12.519"></status>
+<test id="s1-s1-t7" name="TEST 4 : Run Gatling load test simulation one and check the results.">
+<kw name="Run Gatling Load Test Simulation One Check">
+<kw name="Run Gatling Load Test Simulation One" library="Remote">
+<doc>Run Gatling Load Test Simulation One</doc>
+<assign>
+<var>${gatling}</var>
+</assign>
+<msg timestamp="20200126 19:55:48.684" level="INFO">${gatling} = 19:55:32.867 [main] INFO io.gatling.core.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+19:55:33.400 [GatlingSystem-akka.actor.default-dispatcher-3] INFO ...</msg>
+<status status="PASS" endtime="20200126 19:55:48.684" starttime="20200126 19:55:32.193"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${gatling}</arg>
+<arg>20 (OK=20</arg>
+<arg>KO=0</arg>
+<arg>)</arg>
+</arguments>
+<status status="PASS" endtime="20200126 19:55:48.684" starttime="20200126 19:55:48.684"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${gatling}</arg>
+</arguments>
+<msg timestamp="20200126 19:55:48.685" level="INFO">19:55:32.867 [main] INFO io.gatling.core.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+19:55:33.400 [GatlingSystem-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:55:33.694 [GatlingSystem-akka.actor.default-dispatcher-3] INFO io.gatling.core.stats.writer.LogFileDataWriter - Initializing
+19:55:33.694 [GatlingSystem-akka.actor.default-dispatcher-2] INFO io.gatling.core.stats.writer.ConsoleDataWriter - Initializing
+19:55:33.701 [GatlingSystem-akka.actor.default-dispatcher-2] INFO io.gatling.core.stats.writer.ConsoleDataWriter - Initialized
+19:55:33.710 [GatlingSystem-akka.actor.default-dispatcher-3] INFO io.gatling.core.stats.writer.LogFileDataWriter - Initialized
+19:55:33.763 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+19:55:33.763 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+19:55:33.780 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+19:55:33.780 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+19:55:33.795 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+19:55:33.797 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+19:55:33.797 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+19:55:33.798 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+19:55:33.798 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+19:55:33.798 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+19:55:33.799 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+19:55:33.799 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+19:55:33.799 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+19:55:33.799 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.&lt;init&gt;(long, int): available
+19:55:33.799 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+19:55:33.800 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T (java.io.tmpdir)
+19:55:33.800 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:55:33.801 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+19:55:33.801 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:55:33.802 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+19:55:33.802 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+19:55:33.802 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@38604b81
+19:55:33.807 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T (io.netty.tmpdir)
+19:55:33.807 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+19:55:33.807 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+19:55:33.810 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - Unable to load the library 'netty_tcnative_osx_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1860)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:336)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:328)
+	at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:306)
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.netty.util.internal.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:96)
+	at io.netty.handler.ssl.OpenSsl.loadTcNative(OpenSsl.java:440)
+	at io.netty.handler.ssl.OpenSsl.&lt;clinit&gt;(OpenSsl.java:97)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:202)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:191)
+	at io.netty.handler.ssl.OpenSslContext.&lt;init&gt;(OpenSslContext.java:34)
+	at io.netty.handler.ssl.OpenSslClientContext.&lt;init&gt;(OpenSslClientContext.java:188)
+	at io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:776)
+	at io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:452)
+	at io.gatling.http.util.SslContextsFactory.newSslContexts(SslContexts.scala:96)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newSslContexts(HttpClientFactory.scala:86)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClientConfig(HttpClientFactory.scala:60)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClient(HttpClientFactory.scala:80)
+	at io.gatling.http.engine.HttpEngine$.apply(HttpEngine.scala:47)
+	at io.gatling.http.protocol.HttpProtocol$$anon$1.newComponents(HttpProtocol.scala:54)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$1(Protocol.scala:68)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.componentsFactory$1(Protocol.scala:68)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.comps$1(Protocol.scala:70)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$4(Protocol.scala:72)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.components(Protocol.scala:72)
+	at io.gatling.http.action.HttpActionBuilder.lookUpHttpComponents(HttpActionBuilder.scala:26)
+	at io.gatling.http.action.HttpRequestActionBuilder.build(HttpRequestActionBuilder.scala:33)
+	at io.gatling.core.structure.StructureBuilder.$anonfun$build$1(StructureBuilder.scala:35)
+	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:122)
+	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:118)
+	at scala.collection.immutable.List.foldLeft(List.scala:85)
+	at io.gatling.core.structure.StructureBuilder.build(StructureBuilder.scala:34)
+	at io.gatling.core.structure.StructureBuilder.build$(StructureBuilder.scala:33)
+	at io.gatling.core.structure.ScenarioBuilder.build(ScenarioBuilder.scala:38)
+	at io.gatling.core.structure.PopulationBuilder.build(ScenarioBuilder.scala:100)
+	at io.gatling.core.scenario.SimulationParams.$anonfun$scenarios$1(Simulation.scala:194)
+	at scala.collection.immutable.List.map(List.scala:282)
+	at io.gatling.core.scenario.SimulationParams.scenarios(Simulation.scala:194)
+	at io.gatling.app.Runner.run0(Runner.scala:92)
+	at io.gatling.app.Runner.run(Runner.scala:61)
+	at io.gatling.app.Gatling$.start(Gatling.scala:74)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:47)
+	at io.gatling.app.Gatling$.main(Gatling.scala:39)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+19:55:33.811 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - netty_tcnative_osx_x86_64 cannot be loaded from java.libary.path, now trying export to -Dio.netty.native.workdir: /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T
+java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1860)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:316)
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.netty.util.internal.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:96)
+	at io.netty.handler.ssl.OpenSsl.loadTcNative(OpenSsl.java:440)
+	at io.netty.handler.ssl.OpenSsl.&lt;clinit&gt;(OpenSsl.java:97)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:202)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:191)
+	at io.netty.handler.ssl.OpenSslContext.&lt;init&gt;(OpenSslContext.java:34)
+	at io.netty.handler.ssl.OpenSslClientContext.&lt;init&gt;(OpenSslClientContext.java:188)
+	at io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:776)
+	at io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:452)
+	at io.gatling.http.util.SslContextsFactory.newSslContexts(SslContexts.scala:96)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newSslContexts(HttpClientFactory.scala:86)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClientConfig(HttpClientFactory.scala:60)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClient(HttpClientFactory.scala:80)
+	at io.gatling.http.engine.HttpEngine$.apply(HttpEngine.scala:47)
+	at io.gatling.http.protocol.HttpProtocol$$anon$1.newComponents(HttpProtocol.scala:54)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$1(Protocol.scala:68)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.componentsFactory$1(Protocol.scala:68)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.comps$1(Protocol.scala:70)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$4(Protocol.scala:72)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.components(Protocol.scala:72)
+	at io.gatling.http.action.HttpActionBuilder.lookUpHttpComponents(HttpActionBuilder.scala:26)
+	at io.gatling.http.action.HttpRequestActionBuilder.build(HttpRequestActionBuilder.scala:33)
+	at io.gatling.core.structure.StructureBuilder.$anonfun$build$1(StructureBuilder.scala:35)
+	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:122)
+	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:118)
+	at scala.collection.immutable.List.foldLeft(List.scala:85)
+	at io.gatling.core.structure.StructureBuilder.build(StructureBuilder.scala:34)
+	at io.gatling.core.structure.StructureBuilder.build$(StructureBuilder.scala:33)
+	at io.gatling.core.structure.ScenarioBuilder.build(ScenarioBuilder.scala:38)
+	at io.gatling.core.structure.PopulationBuilder.build(ScenarioBuilder.scala:100)
+	at io.gatling.core.scenario.SimulationParams.$anonfun$scenarios$1(Simulation.scala:194)
+	at scala.collection.immutable.List.map(List.scala:282)
+	at io.gatling.core.scenario.SimulationParams.scenarios(Simulation.scala:194)
+	at io.gatling.app.Runner.run0(Runner.scala:92)
+	at io.gatling.app.Runner.run(Runner.scala:61)
+	at io.gatling.app.Gatling$.start(Gatling.scala:74)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:47)
+	at io.gatling.app.Gatling$.main(Gatling.scala:39)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+		at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1860)
+		at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+		at java.lang.System.loadLibrary(System.java:1122)
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:336)
+		at java.security.AccessController.doPrivileged(Native Method)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:328)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:306)
+		... 42 common frames omitted
+19:55:33.834 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - Successfully loaded the library /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T/libnetty_tcnative_osx_x86_641453828891075380352.dylib
+19:55:33.834 [main] DEBUG io.netty.handler.ssl.OpenSsl - Initialize netty-tcnative using engine: 'default'
+19:55:33.834 [main] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative using native library: BoringSSL
+19:55:33.956 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+19:55:33.956 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+19:55:33.956 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6af9fcb2
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+19:55:33.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+19:55:33.968 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+19:55:33.968 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+19:55:33.973 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+19:55:33.973 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+19:55:33.973 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 200000
+19:55:33.982 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+19:55:33.983 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+19:55:33.983 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+19:55:33.983 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-ECDSA-AES128-GCM-SHA256
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-ECDSA-AES128-GCM-SHA256
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-RSA-AES128-GCM-SHA256
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-RSA-AES128-GCM-SHA256
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-ECDSA-AES256-GCM-SHA384
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-ECDSA-AES256-GCM-SHA384
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-RSA-AES256-GCM-SHA384
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-RSA-AES256-GCM-SHA384
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-ECDSA-CHACHA20-POLY1305
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-ECDSA-CHACHA20-POLY1305
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-RSA-CHACHA20-POLY1305
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-RSA-CHACHA20-POLY1305
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-PSK-CHACHA20-POLY1305
+19:55:33.993 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-PSK-CHACHA20-POLY1305
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-ECDSA-AES128-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-ECDSA-AES128-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-RSA-AES128-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-RSA-AES128-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA =&gt; ECDHE-PSK-AES128-CBC-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA =&gt; ECDHE-PSK-AES128-CBC-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-ECDSA-AES256-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-ECDSA-AES256-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-RSA-AES256-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-RSA-AES256-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA =&gt; ECDHE-PSK-AES256-CBC-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA =&gt; ECDHE-PSK-AES256-CBC-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 =&gt; AES128-GCM-SHA256
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 =&gt; AES128-GCM-SHA256
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 =&gt; AES256-GCM-SHA384
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 =&gt; AES256-GCM-SHA384
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA =&gt; AES128-SHA
+19:55:33.994 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA =&gt; AES128-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA =&gt; PSK-AES128-CBC-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA =&gt; PSK-AES128-CBC-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA =&gt; AES256-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA =&gt; AES256-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA =&gt; PSK-AES256-CBC-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA =&gt; PSK-AES256-CBC-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_3DES_EDE_CBC_SHA =&gt; DES-CBC3-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_3DES_EDE_CBC_SHA =&gt; DES-CBC3-SHA
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2] 
+19:55:33.995 [main] DEBUG io.netty.handler.ssl.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+19:55:34.009 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+19:55:34.027 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+19:55:34.027 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+19:55:34.032 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+19:55:34.095 [main] INFO io.gatling.http.engine.HttpEngine - Start warm up
+19:55:34.418 [gatling-http-1-1] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 36972 (auto-detected)
+19:55:34.420 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+19:55:34.420 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+19:55:34.421 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+19:55:34.421 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+19:55:34.423 [gatling-http-1-1] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+19:55:34.564 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.DefaultHttpClient - Installing SslHandler for https://gatling.io
+19:55:34.571 [gatling-http-1-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@64bbe90
+19:55:34.690 [gatling-http-1-1] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=gatling.io
+19:55:34.788 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: close
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+accept-encoding: gzip
+origin: https://gatling.io
+host: gatling.io, content=null}
+19:55:34.795 [gatling-http-1-1] DEBUG io.netty.handler.ssl.SslHandler - [id: 0xf70c43de, L:/192.168.1.192:52934 - R:gatling.io/34.77.87.202:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+19:55:34.903 [gatling-http-1-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+19:55:34.903 [gatling-http-1-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+19:55:34.908 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:55:34 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+Last-Modified: Mon, 27 Jan 2020 00:28:19 GMT
+content-encoding: gzip'
+19:55:34.921 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledUnsafeHeapByteBuf(ridx: 0, widx: 25280, cap: 32768), decoderResult: success)'
+19:55:34.922 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:34.924 [main] DEBUG io.gatling.http.engine.HttpEngine - Warm up request https://gatling.io successful
+19:55:34.926 [main] INFO io.gatling.http.engine.HttpEngine - Warm up done
+19:55:34.978 [main] DEBUG io.gatling.http.cache.HttpCaches - HTTP/2 disabled
+Simulation scalaremotelibrarygatlingjar.GatlingLoadTestSimulationOne started...
+19:55:35.062 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=1
+19:55:35.067 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #1
+19:55:35.069 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=2
+19:55:35.069 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #2
+19:55:35.070 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=3
+19:55:35.070 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #3
+19:55:35.071 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=4
+19:55:35.071 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #4
+19:55:35.071 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=5
+19:55:35.072 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #5
+19:55:35.072 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=6
+19:55:35.072 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #6
+19:55:35.073 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=7
+19:55:35.073 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #7
+19:55:35.074 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=8
+19:55:35.074 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #8
+19:55:35.075 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=9
+19:55:35.075 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #9
+19:55:35.075 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation One, userId=10
+19:55:35.076 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #10
+19:55:35.077 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Injecting 10 users in scenario Gatling Load Test Simulation One, continue=false
+19:55:35.077 [GatlingSystem-akka.actor.default-dispatcher-4] INFO io.gatling.core.controller.inject.Injector - StoppedInjecting
+
+================================================================================
+2020-01-26 19:55:38                                           5s elapsed
+---- Requests ------------------------------------------------------------------
+&gt; Global                                                   (OK=0      KO=0     )
+
+
+---- Gatling Load Test Simulation One ------------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 10     / done: 0     
+================================================================================
+
+19:55:42.376 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.377 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.378 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.378 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.378 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.378 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.378 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.378 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.377 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.385 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.503 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.503 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.504 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.504 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.521 [gatling-http-1-2] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=1
+19:55:42.521 [gatling-http-1-5] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=4
+19:55:42.522 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.522 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.527 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.528 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.528 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.528 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.528 [gatling-http-1-7] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=6
+19:55:42.528 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.528 [gatling-http-1-6] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=5
+19:55:42.529 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.529 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.529 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.529 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.529 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.529 [gatling-http-1-9] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=8
+19:55:42.529 [gatling-http-1-8] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=7
+19:55:42.529 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.529 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.544 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.544 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.544 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.544 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.545 [gatling-http-1-11] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=10
+19:55:42.545 [gatling-http-1-10] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=9
+19:55:42.545 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.545 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.550 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.550 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.551 [gatling-http-1-3] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=2
+19:55:42.552 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.552 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:42.553 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:42.553 [gatling-http-1-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_1 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation One, userId=3
+19:55:42.554 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:42.627 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.628 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.630 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:42.636 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.636 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.636 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4586, cap: 4586/4586, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4586, widx: 4586, cap: 16384)), decoderResult: success)'
+19:55:42.637 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1831, cap: 1831/1831, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1831, widx: 1831, cap: 16384)), decoderResult: success)'
+19:55:42.638 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.639 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.639 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:42.652 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.653 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.653 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4586, cap: 4586/4586, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4586, widx: 4586, cap: 16384)), decoderResult: success)'
+19:55:42.654 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1831, cap: 1831/1831, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1831, widx: 1831, cap: 16384)), decoderResult: success)'
+19:55:42.656 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.656 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.656 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1792, cap: 1792/1792, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1792, widx: 1792, cap: 16384)), decoderResult: success)'
+19:55:42.656 [gatling-http-1-5] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4984ms)
+19:55:42.656 [gatling-http-1-7] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4975ms)
+19:55:42.656 [gatling-http-1-8] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4998ms)
+19:55:42.656 [gatling-http-1-9] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4982ms)
+19:55:42.657 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4625, cap: 4625/4625, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4625, widx: 4625, cap: 16384)), decoderResult: success)'
+19:55:42.658 [gatling-http-1-11] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:42.659 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.659 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.660 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1792, cap: 1792/1792, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1792, widx: 1792, cap: 16384)), decoderResult: success)'
+19:55:42.660 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4625, cap: 4625/4625, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4625, widx: 4625, cap: 16384)), decoderResult: success)'
+19:55:42.660 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.661 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.661 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 384, cap: 384/384, unwrapped: PooledUnsafeDirectByteBuf(ridx: 384, widx: 384, cap: 16384)), decoderResult: success)'
+19:55:42.661 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 2794, cap: 2794/2794, unwrapped: PooledUnsafeDirectByteBuf(ridx: 2794, widx: 2794, cap: 16384)), decoderResult: success)'
+19:55:42.661 [gatling-http-1-2] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:42.663 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1408, cap: 1408/1408, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1408, widx: 1408, cap: 8192)), decoderResult: success)'
+19:55:42.664 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1408, cap: 1408/1408, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1408, widx: 1408, cap: 8192)), decoderResult: success)'
+19:55:42.664 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 423, cap: 423/423, unwrapped: PooledUnsafeDirectByteBuf(ridx: 423, widx: 423, cap: 4096)), decoderResult: success)'
+19:55:42.665 [gatling-http-1-3] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=5000ms)
+19:55:42.666 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.666 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.666 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 384, cap: 384/384, unwrapped: PooledUnsafeDirectByteBuf(ridx: 384, widx: 384, cap: 16384)), decoderResult: success)'
+19:55:42.667 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4202, cap: 4202/4202, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4202, widx: 4202, cap: 16384)), decoderResult: success)'
+19:55:42.667 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1831, cap: 1831/1831, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1831, widx: 1831, cap: 16384)), decoderResult: success)'
+19:55:42.667 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.667 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.667 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3178, cap: 3178/3178, unwrapped: PooledUnsafeDirectByteBuf(ridx: 3178, widx: 3178, cap: 16384)), decoderResult: success)'
+19:55:42.668 [gatling-http-1-4] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:42.671 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3239, cap: 3239/3239, unwrapped: PooledUnsafeDirectByteBuf(ridx: 3239, widx: 3239, cap: 16384)), decoderResult: success)'
+19:55:42.671 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:42.671 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:42.672 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:42.672 [gatling-http-1-10] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=5000ms)
+19:55:42.672 [gatling-http-1-6] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+
+================================================================================
+2020-01-26 19:55:43                                          10s elapsed
+---- Requests ------------------------------------------------------------------
+&gt; Global                                                   (OK=20     KO=0     )
+&gt; request_1                                                (OK=10     KO=0     )
+&gt; request_1 Redirect 1                                     (OK=10     KO=0     )
+
+---- Gatling Load Test Simulation One ------------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 10     / done: 0     
+================================================================================
+
+19:55:47.660 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #6
+19:55:47.670 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG io.gatling.core.action.Exit - End user #4
+19:55:47.670 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG io.gatling.core.action.Exit - End user #8
+19:55:47.680 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG io.gatling.core.action.Exit - End user #2
+19:55:47.680 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #7
+19:55:47.680 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG io.gatling.core.action.Exit - End user #1
+19:55:47.681 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #3
+19:55:47.681 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG io.gatling.core.action.Exit - End user #10
+19:55:47.689 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG io.gatling.core.action.Exit - End user #5
+19:55:47.689 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG io.gatling.core.action.Exit - End user #9
+19:55:47.690 [GatlingSystem-akka.actor.default-dispatcher-6] INFO io.gatling.core.controller.inject.Injector - All users of scenario Gatling Load Test Simulation One are stopped
+19:55:47.690 [GatlingSystem-akka.actor.default-dispatcher-6] INFO io.gatling.core.controller.inject.Injector - Stopping
+19:55:47.691 [GatlingSystem-akka.actor.default-dispatcher-5] INFO io.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+
+================================================================================
+2020-01-26 19:55:47                                          13s elapsed
+---- Requests ------------------------------------------------------------------
+&gt; Global                                                   (OK=20     KO=0     )
+&gt; request_1                                                (OK=10     KO=0     )
+&gt; request_1 Redirect 1                                     (OK=10     KO=0     )
+
+---- Gatling Load Test Simulation One ------------------------------------------
+[##########################################################################]100%
+          waiting: 0      / active: 0      / done: 10    
+================================================================================
+
+19:55:47.695 [GatlingSystem-akka.actor.default-dispatcher-5] INFO io.gatling.core.controller.Controller - StatsEngineStopped
+Simulation scalaremotelibrarygatlingjar.GatlingLoadTestSimulationOne completed in 12 seconds
+Parsing log file(s)...
+19:55:47.763 [main] INFO io.gatling.charts.stats.LogFileReader - Collected ArrayBuffer(/Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/results/gatlingloadtestsimulationone-20200127005533672/simulation.log) from gatlingloadtestsimulationone-20200127005533672
+19:55:47.772 [main] INFO io.gatling.charts.stats.LogFileReader - First pass
+19:55:47.781 [main] INFO io.gatling.charts.stats.LogFileReader - First pass done: read 41 lines
+19:55:47.794 [main] INFO io.gatling.charts.stats.LogFileReader - Second pass
+19:55:47.828 [main] INFO io.gatling.charts.stats.LogFileReader - Second pass: read 41 lines
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+&gt; request count                                         20 (OK=20     KO=0     )
+&gt; min response time                                    102 (OK=102    KO=-     )
+&gt; max response time                                   7483 (OK=7483   KO=-     )
+&gt; mean response time                                  3790 (OK=3790   KO=-     )
+&gt; std deviation                                       3670 (OK=3670   KO=-     )
+&gt; response time 50th percentile                       3789 (OK=3789   KO=-     )
+&gt; response time 75th percentile                       7456 (OK=7456   KO=-     )
+&gt; response time 95th percentile                       7482 (OK=7482   KO=-     )
+&gt; response time 99th percentile                       7483 (OK=7483   KO=-     )
+&gt; mean requests/sec                                  1.538 (OK=1.538  KO=-     )
+---- Response Time Distribution ------------------------------------------------
+&gt; t &lt; 800 ms                                            10 ( 50%)
+&gt; 800 ms &lt; t &lt; 1200 ms                                   0 (  0%)
+&gt; t &gt; 1200 ms                                           10 ( 50%)
+&gt; failed                                                 0 (  0%)
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/results/gatlingloadtestsimulationone-20200127005533672/index.html
+</msg>
+<status status="PASS" endtime="20200126 19:55:48.686" starttime="20200126 19:55:48.685"></status>
+</kw>
+<status status="PASS" endtime="20200126 19:55:48.686" starttime="20200126 19:55:32.192"></status>
+</kw>
+<tags>
+<tag>This_Is_An_Actual_Test</tag>
+</tags>
+<status status="PASS" endtime="20200126 19:55:48.687" critical="yes" starttime="20200126 19:55:32.192"></status>
+</test>
+<test id="s1-s1-t8" name="TEST 5 : Run Gatling load test simulation two and check the results.">
+<kw name="Run Gatling Load Test Simulation Two Check">
+<kw name="Run Gatling Load Test Simulation Two" library="Remote">
+<doc>Run Gatling Load Test Simulation Two</doc>
+<assign>
+<var>${gatling}</var>
+</assign>
+<msg timestamp="20200126 19:55:57.264" level="INFO">${gatling} = 19:55:49.305 [main] INFO io.gatling.core.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+19:55:49.776 [GatlingSystem-akka.actor.default-dispatcher-3] INFO ...</msg>
+<status status="PASS" endtime="20200126 19:55:57.264" starttime="20200126 19:55:48.688"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${gatling}</arg>
+<arg>20 (OK=20</arg>
+<arg>KO=0</arg>
+<arg>)</arg>
+</arguments>
+<status status="PASS" endtime="20200126 19:55:57.265" starttime="20200126 19:55:57.264"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${gatling}</arg>
+</arguments>
+<msg timestamp="20200126 19:55:57.266" level="INFO">19:55:49.305 [main] INFO io.gatling.core.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+19:55:49.776 [GatlingSystem-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:55:50.020 [GatlingSystem-akka.actor.default-dispatcher-3] INFO io.gatling.core.stats.writer.ConsoleDataWriter - Initializing
+19:55:50.020 [GatlingSystem-akka.actor.default-dispatcher-2] INFO io.gatling.core.stats.writer.LogFileDataWriter - Initializing
+19:55:50.025 [GatlingSystem-akka.actor.default-dispatcher-3] INFO io.gatling.core.stats.writer.ConsoleDataWriter - Initialized
+19:55:50.031 [GatlingSystem-akka.actor.default-dispatcher-2] INFO io.gatling.core.stats.writer.LogFileDataWriter - Initialized
+19:55:50.069 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+19:55:50.069 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+19:55:50.079 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+19:55:50.079 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+19:55:50.092 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+19:55:50.094 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+19:55:50.094 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+19:55:50.095 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+19:55:50.095 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+19:55:50.095 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+19:55:50.096 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+19:55:50.096 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+19:55:50.097 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+19:55:50.097 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.&lt;init&gt;(long, int): available
+19:55:50.097 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+19:55:50.097 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T (java.io.tmpdir)
+19:55:50.097 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:55:50.098 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+19:55:50.098 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:55:50.098 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+19:55:50.098 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+19:55:50.098 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@95e33cc
+19:55:50.102 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T (io.netty.tmpdir)
+19:55:50.102 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+19:55:50.102 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+19:55:50.104 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - Unable to load the library 'netty_tcnative_osx_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1860)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:336)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:328)
+	at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:306)
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.netty.util.internal.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:96)
+	at io.netty.handler.ssl.OpenSsl.loadTcNative(OpenSsl.java:440)
+	at io.netty.handler.ssl.OpenSsl.&lt;clinit&gt;(OpenSsl.java:97)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:202)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:191)
+	at io.netty.handler.ssl.OpenSslContext.&lt;init&gt;(OpenSslContext.java:34)
+	at io.netty.handler.ssl.OpenSslClientContext.&lt;init&gt;(OpenSslClientContext.java:188)
+	at io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:776)
+	at io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:452)
+	at io.gatling.http.util.SslContextsFactory.newSslContexts(SslContexts.scala:96)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newSslContexts(HttpClientFactory.scala:86)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClientConfig(HttpClientFactory.scala:60)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClient(HttpClientFactory.scala:80)
+	at io.gatling.http.engine.HttpEngine$.apply(HttpEngine.scala:47)
+	at io.gatling.http.protocol.HttpProtocol$$anon$1.newComponents(HttpProtocol.scala:54)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$1(Protocol.scala:68)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.componentsFactory$1(Protocol.scala:68)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.comps$1(Protocol.scala:70)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$4(Protocol.scala:72)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.components(Protocol.scala:72)
+	at io.gatling.http.action.HttpActionBuilder.lookUpHttpComponents(HttpActionBuilder.scala:26)
+	at io.gatling.http.action.HttpRequestActionBuilder.build(HttpRequestActionBuilder.scala:33)
+	at io.gatling.core.structure.StructureBuilder.$anonfun$build$1(StructureBuilder.scala:35)
+	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:122)
+	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:118)
+	at scala.collection.immutable.List.foldLeft(List.scala:85)
+	at io.gatling.core.structure.StructureBuilder.build(StructureBuilder.scala:34)
+	at io.gatling.core.structure.StructureBuilder.build$(StructureBuilder.scala:33)
+	at io.gatling.core.structure.ScenarioBuilder.build(ScenarioBuilder.scala:38)
+	at io.gatling.core.structure.PopulationBuilder.build(ScenarioBuilder.scala:100)
+	at io.gatling.core.scenario.SimulationParams.$anonfun$scenarios$1(Simulation.scala:194)
+	at scala.collection.immutable.List.map(List.scala:282)
+	at io.gatling.core.scenario.SimulationParams.scenarios(Simulation.scala:194)
+	at io.gatling.app.Runner.run0(Runner.scala:92)
+	at io.gatling.app.Runner.run(Runner.scala:61)
+	at io.gatling.app.Gatling$.start(Gatling.scala:74)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:47)
+	at io.gatling.app.Gatling$.main(Gatling.scala:39)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+19:55:50.105 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - netty_tcnative_osx_x86_64 cannot be loaded from java.libary.path, now trying export to -Dio.netty.native.workdir: /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T
+java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1860)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:316)
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.netty.util.internal.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:96)
+	at io.netty.handler.ssl.OpenSsl.loadTcNative(OpenSsl.java:440)
+	at io.netty.handler.ssl.OpenSsl.&lt;clinit&gt;(OpenSsl.java:97)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:202)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext.&lt;init&gt;(ReferenceCountedOpenSslContext.java:191)
+	at io.netty.handler.ssl.OpenSslContext.&lt;init&gt;(OpenSslContext.java:34)
+	at io.netty.handler.ssl.OpenSslClientContext.&lt;init&gt;(OpenSslClientContext.java:188)
+	at io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:776)
+	at io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:452)
+	at io.gatling.http.util.SslContextsFactory.newSslContexts(SslContexts.scala:96)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newSslContexts(HttpClientFactory.scala:86)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClientConfig(HttpClientFactory.scala:60)
+	at io.gatling.http.engine.DefaultHttpClientFactory.newClient(HttpClientFactory.scala:80)
+	at io.gatling.http.engine.HttpEngine$.apply(HttpEngine.scala:47)
+	at io.gatling.http.protocol.HttpProtocol$$anon$1.newComponents(HttpProtocol.scala:54)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$1(Protocol.scala:68)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.componentsFactory$1(Protocol.scala:68)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.comps$1(Protocol.scala:70)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.$anonfun$components$4(Protocol.scala:72)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:82)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.components(Protocol.scala:72)
+	at io.gatling.http.action.HttpActionBuilder.lookUpHttpComponents(HttpActionBuilder.scala:26)
+	at io.gatling.http.action.HttpRequestActionBuilder.build(HttpRequestActionBuilder.scala:33)
+	at io.gatling.core.structure.StructureBuilder.$anonfun$build$1(StructureBuilder.scala:35)
+	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:122)
+	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:118)
+	at scala.collection.immutable.List.foldLeft(List.scala:85)
+	at io.gatling.core.structure.StructureBuilder.build(StructureBuilder.scala:34)
+	at io.gatling.core.structure.StructureBuilder.build$(StructureBuilder.scala:33)
+	at io.gatling.core.structure.ScenarioBuilder.build(ScenarioBuilder.scala:38)
+	at io.gatling.core.structure.PopulationBuilder.build(ScenarioBuilder.scala:100)
+	at io.gatling.core.scenario.SimulationParams.$anonfun$scenarios$1(Simulation.scala:194)
+	at scala.collection.immutable.List.map(List.scala:282)
+	at io.gatling.core.scenario.SimulationParams.scenarios(Simulation.scala:194)
+	at io.gatling.app.Runner.run0(Runner.scala:92)
+	at io.gatling.app.Runner.run(Runner.scala:61)
+	at io.gatling.app.Gatling$.start(Gatling.scala:74)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:47)
+	at io.gatling.app.Gatling$.main(Gatling.scala:39)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+		at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1860)
+		at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+		at java.lang.System.loadLibrary(System.java:1122)
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:336)
+		at java.security.AccessController.doPrivileged(Native Method)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:328)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:306)
+		... 42 common frames omitted
+19:55:50.144 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - Successfully loaded the library /var/folders/q_/26wb4m8j1tx96rxxbc28gshh0000gn/T/libnetty_tcnative_osx_x86_648479929203695450779.dylib
+19:55:50.144 [main] DEBUG io.netty.handler.ssl.OpenSsl - Initialize netty-tcnative using engine: 'default'
+19:55:50.144 [main] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative using native library: BoringSSL
+19:55:50.235 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+19:55:50.236 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+19:55:50.236 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1869fbd2
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+19:55:50.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+19:55:50.249 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+19:55:50.249 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+19:55:50.249 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 200000
+19:55:50.258 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+19:55:50.258 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+19:55:50.258 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+19:55:50.258 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+19:55:50.266 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-ECDSA-AES128-GCM-SHA256
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-ECDSA-AES128-GCM-SHA256
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-RSA-AES128-GCM-SHA256
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 =&gt; ECDHE-RSA-AES128-GCM-SHA256
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-ECDSA-AES256-GCM-SHA384
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-ECDSA-AES256-GCM-SHA384
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-RSA-AES256-GCM-SHA384
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 =&gt; ECDHE-RSA-AES256-GCM-SHA384
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-ECDSA-CHACHA20-POLY1305
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-ECDSA-CHACHA20-POLY1305
+19:55:50.267 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-RSA-CHACHA20-POLY1305
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-RSA-CHACHA20-POLY1305
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-PSK-CHACHA20-POLY1305
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 =&gt; ECDHE-PSK-CHACHA20-POLY1305
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-ECDSA-AES128-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-ECDSA-AES128-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-RSA-AES128-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA =&gt; ECDHE-RSA-AES128-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA =&gt; ECDHE-PSK-AES128-CBC-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA =&gt; ECDHE-PSK-AES128-CBC-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-ECDSA-AES256-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-ECDSA-AES256-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-RSA-AES256-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA =&gt; ECDHE-RSA-AES256-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA =&gt; ECDHE-PSK-AES256-CBC-SHA
+19:55:50.268 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA =&gt; ECDHE-PSK-AES256-CBC-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 =&gt; AES128-GCM-SHA256
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 =&gt; AES128-GCM-SHA256
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 =&gt; AES256-GCM-SHA384
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 =&gt; AES256-GCM-SHA384
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA =&gt; AES128-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA =&gt; AES128-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA =&gt; PSK-AES128-CBC-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA =&gt; PSK-AES128-CBC-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA =&gt; AES256-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA =&gt; AES256-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA =&gt; PSK-AES256-CBC-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA =&gt; PSK-AES256-CBC-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_3DES_EDE_CBC_SHA =&gt; DES-CBC3-SHA
+19:55:50.269 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_3DES_EDE_CBC_SHA =&gt; DES-CBC3-SHA
+19:55:50.270 [main] DEBUG io.netty.handler.ssl.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2] 
+19:55:50.270 [main] DEBUG io.netty.handler.ssl.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+19:55:50.278 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+19:55:50.289 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+19:55:50.289 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+19:55:50.293 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+19:55:50.334 [main] INFO io.gatling.http.engine.HttpEngine - Start warm up
+19:55:50.385 [gatling-http-1-1] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 36978 (auto-detected)
+19:55:50.387 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+19:55:50.387 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+19:55:50.388 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+19:55:50.388 [gatling-http-1-1] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+19:55:50.390 [gatling-http-1-1] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+19:55:50.512 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.DefaultHttpClient - Installing SslHandler for https://gatling.io
+19:55:50.518 [gatling-http-1-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4c5257f2
+19:55:50.638 [gatling-http-1-1] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=gatling.io
+19:55:50.733 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: close
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+accept-encoding: gzip
+origin: https://gatling.io
+host: gatling.io, content=null}
+19:55:50.738 [gatling-http-1-1] DEBUG io.netty.handler.ssl.SslHandler - [id: 0xcaf5e9e2, L:/192.168.1.192:52947 - R:gatling.io/34.77.87.202:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+19:55:50.836 [gatling-http-1-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+19:55:50.836 [gatling-http-1-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+19:55:50.840 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:55:50 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+Last-Modified: Mon, 27 Jan 2020 00:28:19 GMT
+content-encoding: gzip'
+19:55:50.852 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledUnsafeHeapByteBuf(ridx: 0, widx: 25280, cap: 32768), decoderResult: success)'
+19:55:50.854 [gatling-http-1-1] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:50.856 [main] DEBUG io.gatling.http.engine.HttpEngine - Warm up request https://gatling.io successful
+19:55:50.857 [main] INFO io.gatling.http.engine.HttpEngine - Warm up done
+19:55:50.895 [main] DEBUG io.gatling.http.cache.HttpCaches - HTTP/2 disabled
+Simulation scalaremotelibrarygatlingjar.GatlingLoadTestSimulationTwo started...
+19:55:50.972 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=1
+19:55:50.976 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #1
+19:55:50.978 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=2
+19:55:50.978 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #2
+19:55:50.979 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=3
+19:55:50.979 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #3
+19:55:50.980 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=4
+19:55:50.980 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #4
+19:55:50.981 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=5
+19:55:50.981 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #5
+19:55:50.982 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=6
+19:55:50.982 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #6
+19:55:50.983 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=7
+19:55:50.983 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #7
+19:55:50.984 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=8
+19:55:50.984 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #8
+19:55:50.984 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=9
+19:55:50.985 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #9
+19:55:50.986 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/: scenario=Gatling Load Test Simulation Two, userId=10
+19:55:50.986 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Start user #10
+19:55:50.986 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.controller.inject.open.OpenWorkload - Injecting 10 users in scenario Gatling Load Test Simulation Two, continue=false
+19:55:50.987 [GatlingSystem-akka.actor.default-dispatcher-4] INFO io.gatling.core.controller.inject.Injector - StoppedInjecting
+19:55:51.060 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.060 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.060 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.061 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.070 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.072 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.072 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.072 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.072 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.072 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.157 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.158 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.161 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.162 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.162 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.162 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.163 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.164 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.164 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.164 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.164 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.164 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.171 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.171 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.172 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.172 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.173 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.173 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.173 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 303 See Other
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=5
+Location: /computers'
+19:55:51.173 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='EmptyLastHttpContent'
+19:55:51.174 [gatling-http-1-3] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=2
+19:55:51.174 [gatling-http-1-4] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=3
+19:55:51.174 [gatling-http-1-9] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=8
+19:55:51.174 [gatling-http-1-7] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=6
+19:55:51.174 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.174 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.174 [gatling-http-1-10] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=9
+19:55:51.175 [gatling-http-1-6] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=5
+19:55:51.174 [gatling-http-1-5] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=4
+19:55:51.175 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.175 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.174 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.174 [gatling-http-1-8] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=7
+19:55:51.174 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.175 [gatling-http-1-11] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=10
+19:55:51.175 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.175 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.175 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.175 [gatling-http-1-2] DEBUG io.gatling.http.engine.tx.HttpTxExecutor - Sending request=request_2 uri=http://computer-database.gatling.io/computers: scenario=Gatling Load Test Simulation Two, userId=1
+19:55:51.176 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /computers HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+DNT: 1
+Accept-Language: en-US,en;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
+Referer: http://computer-database.gatling.io/
+accept-encoding: gzip, deflate
+origin: http://computer-database.gatling.io
+host: computer-database.gatling.io, content=null}
+19:55:51.274 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.274 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.275 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 384, cap: 384/384, unwrapped: PooledUnsafeDirectByteBuf(ridx: 384, widx: 384, cap: 16384)), decoderResult: success)'
+19:55:51.276 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.276 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.278 [gatling-http-1-10] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6033, cap: 6033/6033, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6033, widx: 6033, cap: 16384)), decoderResult: success)'
+19:55:51.278 [gatling-http-1-11] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:51.281 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.281 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.282 [gatling-http-1-5] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:51.297 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.298 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.298 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4586, cap: 4586/4586, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4586, widx: 4586, cap: 16384)), decoderResult: success)'
+19:55:51.298 [gatling-http-1-7] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1831, cap: 1831/1831, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1831, widx: 1831, cap: 16384)), decoderResult: success)'
+19:55:51.299 [gatling-http-1-11] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4980ms)
+19:55:51.299 [gatling-http-1-10] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4980ms)
+19:55:51.299 [gatling-http-1-7] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:51.299 [gatling-http-1-5] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4984ms)
+19:55:51.309 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.309 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.309 [gatling-http-1-8] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:51.309 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.309 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.310 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 384, cap: 384/384, unwrapped: PooledUnsafeDirectByteBuf(ridx: 384, widx: 384, cap: 16384)), decoderResult: success)'
+19:55:51.310 [gatling-http-1-8] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:51.310 [gatling-http-1-6] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6033, cap: 6033/6033, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6033, widx: 6033, cap: 16384)), decoderResult: success)'
+19:55:51.311 [gatling-http-1-6] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:51.314 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.314 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.314 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3178, cap: 3178/3178, unwrapped: PooledUnsafeDirectByteBuf(ridx: 3178, widx: 3178, cap: 16384)), decoderResult: success)'
+19:55:51.314 [gatling-http-1-2] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3239, cap: 3239/3239, unwrapped: PooledUnsafeDirectByteBuf(ridx: 3239, widx: 3239, cap: 16384)), decoderResult: success)'
+19:55:51.315 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.315 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.315 [gatling-http-1-2] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:51.315 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1792, cap: 1792/1792, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1792, widx: 1792, cap: 16384)), decoderResult: success)'
+19:55:51.316 [gatling-http-1-9] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4625, cap: 4625/4625, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4625, widx: 4625, cap: 16384)), decoderResult: success)'
+19:55:51.317 [gatling-http-1-9] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:51.317 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.317 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 27 Jan 2020 00:54:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7254
+Connection: keep-alive
+Keep-Alive: timeout=5'
+19:55:51.317 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.317 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 837, cap: 837/837, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1024, widx: 1024, cap: 1024)), decoderResult: success)'
+19:55:51.317 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4586, cap: 4586/4586, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4586, widx: 4586, cap: 16384)), decoderResult: success)'
+19:55:51.317 [gatling-http-1-3] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 6417, cap: 6417/6417, unwrapped: PooledUnsafeDirectByteBuf(ridx: 6417, widx: 6417, cap: 16384)), decoderResult: success)'
+19:55:51.317 [gatling-http-1-4] DEBUG io.gatling.http.client.impl.HttpAppHandler - Read msg='DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1831, cap: 1831/1831, unwrapped: PooledUnsafeDirectByteBuf(ridx: 1831, widx: 1831, cap: 16384)), decoderResult: success)'
+19:55:51.318 [gatling-http-1-3] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=4999ms)
+19:55:51.318 [gatling-http-1-4] DEBUG io.gatling.core.action.Pause - Pausing for 5000ms (real=5000ms)
+
+================================================================================
+2020-01-26 19:55:55                                           5s elapsed
+---- Requests ------------------------------------------------------------------
+&gt; Global                                                   (OK=20     KO=0     )
+&gt; request_2                                                (OK=10     KO=0     )
+&gt; request_2 Redirect 1                                     (OK=10     KO=0     )
+
+---- Gatling Load Test Simulation Two ------------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 10     / done: 0     
+================================================================================
+
+19:55:56.295 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #9
+19:55:56.295 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG io.gatling.core.action.Exit - End user #10
+19:55:56.305 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #4
+19:55:56.314 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG io.gatling.core.action.Exit - End user #6
+19:55:56.325 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #5
+19:55:56.325 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG io.gatling.core.action.Exit - End user #7
+19:55:56.334 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG io.gatling.core.action.Exit - End user #8
+19:55:56.334 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG io.gatling.core.action.Exit - End user #1
+19:55:56.334 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG io.gatling.core.action.Exit - End user #3
+19:55:56.334 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG io.gatling.core.action.Exit - End user #2
+19:55:56.335 [GatlingSystem-akka.actor.default-dispatcher-4] INFO io.gatling.core.controller.inject.Injector - All users of scenario Gatling Load Test Simulation Two are stopped
+19:55:56.336 [GatlingSystem-akka.actor.default-dispatcher-4] INFO io.gatling.core.controller.inject.Injector - Stopping
+19:55:56.337 [GatlingSystem-akka.actor.default-dispatcher-6] INFO io.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+
+================================================================================
+2020-01-26 19:55:56                                           6s elapsed
+---- Requests ------------------------------------------------------------------
+&gt; Global                                                   (OK=20     KO=0     )
+&gt; request_2                                                (OK=10     KO=0     )
+&gt; request_2 Redirect 1                                     (OK=10     KO=0     )
+
+---- Gatling Load Test Simulation Two ------------------------------------------
+[##########################################################################]100%
+          waiting: 0      / active: 0      / done: 10    
+================================================================================
+
+19:55:56.341 [GatlingSystem-akka.actor.default-dispatcher-6] INFO io.gatling.core.controller.Controller - StatsEngineStopped
+Simulation scalaremotelibrarygatlingjar.GatlingLoadTestSimulationTwo completed in 5 seconds
+Parsing log file(s)...
+19:55:56.394 [main] INFO io.gatling.charts.stats.LogFileReader - Collected ArrayBuffer(/Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/results/gatlingloadtestsimulationtwo-20200127005550004/simulation.log) from gatlingloadtestsimulationtwo-20200127005550004
+19:55:56.400 [main] INFO io.gatling.charts.stats.LogFileReader - First pass
+19:55:56.408 [main] INFO io.gatling.charts.stats.LogFileReader - First pass done: read 41 lines
+19:55:56.415 [main] INFO io.gatling.charts.stats.LogFileReader - Second pass
+19:55:56.440 [main] INFO io.gatling.charts.stats.LogFileReader - Second pass: read 41 lines
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+&gt; request count                                         20 (OK=20     KO=0     )
+&gt; min response time                                    103 (OK=103    KO=-     )
+&gt; max response time                                    192 (OK=192    KO=-     )
+&gt; mean response time                                   156 (OK=156    KO=-     )
+&gt; std deviation                                         31 (OK=31     KO=-     )
+&gt; response time 50th percentile                        162 (OK=162    KO=-     )
+&gt; response time 75th percentile                        184 (OK=184    KO=-     )
+&gt; response time 95th percentile                        191 (OK=191    KO=-     )
+&gt; response time 99th percentile                        192 (OK=192    KO=-     )
+&gt; mean requests/sec                                  3.333 (OK=3.333  KO=-     )
+---- Response Time Distribution ------------------------------------------------
+&gt; t &lt; 800 ms                                            20 (100%)
+&gt; 800 ms &lt; t &lt; 1200 ms                                   0 (  0%)
+&gt; t &gt; 1200 ms                                            0 (  0%)
+&gt; failed                                                 0 (  0%)
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /Users/jgorospe/Documents/GitHub/robotframework-scala-remote-library/target/results/gatlingloadtestsimulationtwo-20200127005550004/index.html
+</msg>
+<status status="PASS" endtime="20200126 19:55:57.267" starttime="20200126 19:55:57.265"></status>
+</kw>
+<status status="PASS" endtime="20200126 19:55:57.267" starttime="20200126 19:55:48.687"></status>
+</kw>
+<tags>
+<tag>This_Is_An_Actual_Test</tag>
+</tags>
+<status status="PASS" endtime="20200126 19:55:57.267" critical="yes" starttime="20200126 19:55:48.687"></status>
+</test>
+<status status="PASS" endtime="20200126 19:55:57.269" starttime="20200126 19:55:13.644"></status>
 </suite>
-<status status="PASS" endtime="20200123 20:52:39.911" starttime="20200123 20:52:12.495"></status>
+<status status="PASS" endtime="20200126 19:55:57.271" starttime="20200126 19:55:13.609"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="6">Critical Tests</stat>
-<stat fail="0" pass="6">All Tests</stat>
+<stat fail="0" pass="8">Critical Tests</stat>
+<stat fail="0" pass="8">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="3">This_Is_An_Actual_Test</stat>
+<stat fail="0" pass="5">This_Is_An_Actual_Test</stat>
 <stat fail="0" pass="3">This_Is_Not_An_Actual_Test</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Tests" pass="6">Tests</stat>
-<stat fail="0" id="s1-s1" name="ScalaKeywordsTest" pass="6">Tests.ScalaKeywordsTest</stat>
+<stat fail="0" id="s1" name="Tests" pass="8">Tests</stat>
+<stat fail="0" id="s1-s1" name="ScalaKeywordsTest" pass="8">Tests.ScalaKeywordsTest</stat>
 </suite>
 </statistics>
 <errors>

@@ -31,6 +31,14 @@ TEST 3 : Run the Ammonite keywords that will perform an HTTP fuzz test.
     Run Ammonite Fuzz Test Script
     [Tags]    This_Is_An_Actual_Test
 
+TEST 4 : Run Gatling load test simulation one and check the results.
+    Run Gatling Load Test Simulation One Check
+    [Tags]    This_Is_An_Actual_Test
+
+TEST 5 : Run Gatling load test simulation two and check the results.
+    Run Gatling Load Test Simulation Two Check
+    [Tags]    This_Is_An_Actual_Test
+
 *** Keywords ***
 
 Say Something Scala
@@ -77,3 +85,13 @@ Ammonite Fuzz Test
     ${ammonite}=    Run Ammonite HTTP Fuzz Test
     Should Contain    ${ammonite}    500
     Log    ${ammonite}
+
+Run Gatling Load Test Simulation One Check
+    ${gatling}=    Run Gatling Load Test Simulation One
+    Should Contain    ${gatling}    20 (OK=20     KO=0     )
+    Log    ${gatling}
+
+Run Gatling Load Test Simulation Two Check
+    ${gatling}=    Run Gatling Load Test Simulation two
+    Should Contain    ${gatling}    20 (OK=20     KO=0     )
+    Log    ${gatling}

@@ -2,6 +2,9 @@ package scalaremotelibrarygatlingjar
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import scala.concurrent.duration._
+
+// The following comes from https://gatling.io/docs/current/quickstart/
 
 class GatlingLoadTestSimulationTwo extends Simulation {
 
@@ -14,7 +17,7 @@ class GatlingLoadTestSimulationTwo extends Simulation {
     .userAgentHeader("Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0")
 
   val scn = scenario("Gatling Load Test Simulation Two")
-    .exec(http("request_two")
+    .exec(http("request_2")
       .get("/"))
     .pause(5)
 
@@ -22,4 +25,3 @@ class GatlingLoadTestSimulationTwo extends Simulation {
     scn.inject(atOnceUsers(10))
   ).protocols(httpProtocol)
 }
-

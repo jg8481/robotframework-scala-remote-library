@@ -45,6 +45,14 @@ TEST 6 : Run the Scala Native C Library keyword that will check CPU utilization 
     Run CPU Utilization Check
     [Tags]    This_Is_An_Actual_Test
 
+TEST 7 : Run Gatling load test simulation one and check the results from a Docker container.
+    Run Gatling Load Test Simulation One In Docker Check
+    [Tags]    This_Is_An_Actual_Test
+
+TEST 8 : Run Gatling load test simulation two and check the results from a Docker container.
+    Run Gatling Load Test Simulation Two In Docker Check
+    [Tags]    This_Is_An_Actual_Test
+
 *** Keywords ***
 
 Say Something Scala
@@ -126,6 +134,12 @@ Run Increased Memory Allocation Check
     Should Not Contain    ${val}    Segmentation fault (core dumped)
     Log To Console    ${val}
     Log    ${val}
+
+Run Gatling Load Test Simulation One In Docker Check
+    Run Gatling Load Test Simulation One In Docker
+
+Run Gatling Load Test Simulation Two In Docker Check
+    Run Gatling Load Test Simulation Two In Docker
 
 Remove All Files
     Remove File    /rfw/message.txt

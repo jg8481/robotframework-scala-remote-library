@@ -16,11 +16,10 @@ Why does this exist?
 
 - https://robotframework.org/#documentation
 
-2) Clone this repo, go into `robotframework-scala-remote-library`, then create the server jar by running the following commands.
+2) Clone this repo, go into `robotframework-scala-remote-library`, then create the server jar by running the following Bash script.
 
 ```
-mvn dependency:copy-dependencies
-mvn package
+bash ./build-remote-server-and-gatling-jars.sh
 
 #After updating the server code it's a good practice to run `mvn clean`, then run those commands again.
 ```

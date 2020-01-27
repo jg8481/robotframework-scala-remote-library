@@ -185,11 +185,30 @@ class ScalaKeywords {
     Seq("/rfw/tools/scala-native-custom-c-library/target/scala-2.11/scala-native-custom-c-library-out", "gradualincreasecheck") #>> new File("/rfw/tools/test-data-logs/scalanativecustomclibrary.txt")!!
   }
 
-  @RobotKeyword("Run Gatling Scenario")
+  @RobotKeyword("Run Gatling Load Test Simulation One")
   @ArgumentNames(Array())
-  def runGatlingScenario(): String = {
+  def runGatlingLoadTestSimulationOne(): String = {
     val path = "pwd".!!.trim
-    s"$path/tools/ammonite-library/Ammonite --no-remote-logging $path/tools/ammonite-library/AmmoniteGatlingScenario.scala"!!
+    s"java -jar $path/tools/scala-remote-library-gatling-jar/target/scala-remote-library-gatling-jar-1.0.0.jar -s scalaremotelibrarygatlingjar.GatlingLoadTestSimulationOne"!!
+  }
+
+  @RobotKeyword("Run Gatling Load Test Simulation Two")
+  @ArgumentNames(Array())
+  def runGatlingLoadTestSimulationTwo(): String = {
+    val path = "pwd".!!.trim
+    s"java -jar $path/tools/scala-remote-library-gatling-jar/target/scala-remote-library-gatling-jar-1.0.0.jar -s scalaremotelibrarygatlingjar.GatlingLoadTestSimulationTwo"!!
+  }
+
+  @RobotKeyword("Run Gatling Load Test Simulation One In Docker")
+  @ArgumentNames(Array())
+  def runGatlingLoadTestSimulationOneInDocker(): Unit = {
+    s"/usr/bin/java -jar /rfw/tools/scala-remote-library-gatling-jar-1.0.0.jar -s scalaremotelibrarygatlingjar.GatlingLoadTestSimulationOne"!!
+  }
+
+  @RobotKeyword("Run Gatling Load Test Simulation Two In Docker")
+  @ArgumentNames(Array())
+  def runGatlingLoadTestSimulationTwoInDocker(): Unit = {
+    s"/usr/bin/java -jar /rfw/tools/scala-remote-library-gatling-jar-1.0.0.jar -s scalaremotelibrarygatlingjar.GatlingLoadTestSimulationTwo"!!
   }
 
 }
