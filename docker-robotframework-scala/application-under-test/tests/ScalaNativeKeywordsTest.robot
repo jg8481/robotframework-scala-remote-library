@@ -136,10 +136,22 @@ Run Increased Memory Allocation Check
     Log    ${val}
 
 Run Gatling Load Test Simulation One In Docker Check
+    Run Keyword And Ignore Error    Empty Directory    /rfw/results
     Run Gatling Load Test Simulation One In Docker
+    @{directory_list}=    List Directories In Directory    /rfw/results
+    ${directory_one}=    Catenate    @{directory_list}
+    ${log_file_one}=    Get File    /rfw/results/${directory_one}/simulation.log
+    Should Not Contain    ${log_file_one}    KO
+    Log    ${log_file_one}
 
 Run Gatling Load Test Simulation Two In Docker Check
+    Run Keyword And Ignore Error    Empty Directory    /rfw/results
     Run Gatling Load Test Simulation Two In Docker
+    @{directory_list}=    List Directories In Directory    /rfw/results
+    ${directory_two}=    Catenate    @{directory_list}
+    ${log_file_two}=    Get File    /rfw/results/${directory_two}/simulation.log
+    Should Not Contain    ${log_file_two}    KO
+    Log    ${log_file_two}
 
 Remove All Files
     Remove File    /rfw/message.txt
