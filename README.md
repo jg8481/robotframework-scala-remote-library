@@ -21,7 +21,7 @@ Why does this exist?
 ```
 bash ./build-remote-server-and-gatling-jars.sh
 
-#After updating the server code it's a good practice to run `mvn clean`, then run those commands again.
+#After updating the server code it's a good practice to run `mvn clean`, then run the Bash script again.
 ```
 
 3) Go into `target` then run one of the following commands to start the server.
