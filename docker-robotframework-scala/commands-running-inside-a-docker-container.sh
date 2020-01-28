@@ -7,7 +7,6 @@ echo
 echo
 rm -rf /rfw/message.txt
 cd /rfw
-rm -rf ./results
 echo
 echo
 ls -l
@@ -22,4 +21,3 @@ cd ./tests
 robot -N "This $TEST_ENVIRONMENT Docker container will build a simple Scala Native application and test it with Robot Framework Scala Keywords -- " ./ScalaNativeKeywordsTest.robot
 echo
 echo
-
