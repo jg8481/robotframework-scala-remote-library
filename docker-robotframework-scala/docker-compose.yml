@@ -2,7 +2,7 @@ version: "3"
 
 services:
 
-  docker-robot-framework-scala-test-runner:
+  docker-robotframework-scala-test-runner:
     build:
       context: .
       dockerfile: "Dockerfile"
