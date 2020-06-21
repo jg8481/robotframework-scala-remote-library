@@ -18,4 +18,3 @@ rm -rf ./docker-robotframework-scala/application-under-test/tools/scala-remote-l
 cp ./target/tools/scala-remote-library-gatling-jar/target/scala-remote-library-gatling-jar-1.0.0.jar ./docker-robotframework-scala/application-under-test/tools/scala-remote-library-gatling-jar-1.0.0.jar
 cp ./target/scala-remote-library-server-1.0.jar ./docker-robotframework-scala/application-under-test/tools/scala-remote-library-server-1.0.jar
 exit
-exit
